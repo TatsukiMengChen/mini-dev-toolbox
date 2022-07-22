@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>开发者代码编辑器 - 迷你世界</title>
+  <link href="./css/app.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <div class="menu-wrapper">
+      <ul class="menu-list clearfix">
+        <!--选择主题-->
+        <li class="menu-item">
+          <div class="theme-wrapper menu-item-wrapper" id="themeWrapper">
+            <button class="theme-btn menu-item-btn" id="themeBtn">主题</button>
+            <div class="theme-inner menu-item-inner" id="themeInner">
+              <ul class="theme-list">
+                <li class="theme-item" data-theme="textmate">textmate</li>
+                <li class="theme-item" data-theme="monokai">monokai</li>
+                <li class="theme-item" data-theme="eclipse">eclipse</li>
+                <li class="theme-item" data-theme="ambiance">ambiance</li>
+                <li class="theme-item" data-theme="sqlserver">sqlserver</li>
+                <li class="theme-item" data-theme="github">github</li>
+                <li class="theme-item" data-theme="solarized_light">solarized_light</li>
+                <li class="theme-item" data-theme="solarized_dark">solarized_dark</li>
+                <li class="theme-item" data-theme="tomorrow_night_bright">tomorrow_night_bright</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!--代码插入-->
+        <li class="menu-item">
+          <div class="insert-wrapper menu-item-wrapper" id="insertWrapper">
+            <button class="insert-btn menu-item-btn" id="insertBtn">插入</button>
+            <div class="insert-inner menu-item-inner not-focus-hide" id="insertInner">
+              <div class="insert-inner-top" id="insertInnerTop"><i class="close-icon"></i></div>
+              <div class="insert-inner-content">
+                <!--父菜单-->
+                <ul class="insert-list parent">
+                  <li class="insert-item" data-insert-type="script">创建现有脚本</li>
+                  <li class="insert-item" data-insert-type="event">创建事件监听器</li>
+                  <li class="insert-item" data-insert-type="variable">创建变量</li>
+                  <li class="insert-item" data-insert-type="func">创建函数</li>
+                  <li class="insert-item" data-insert-type="assert">创建流程语句</li>
+                  <li class="insert-item" data-insert-type="loop">创建循环语句</li>
+                  <li class="insert-item" data-insert-type="table">创建table</li>
+                </ul>
+                <!--子菜单-->
+                <ul class="insert-list child" data-parent-type="script" style="display: none;">
+                  <li class="insert-item" data-insert-type="script-玩家黑名单">玩家黑名单</li>
+                  <li class="insert-item" data-insert-type="script-连锁挖掘">连锁挖掘</li>
+                  <li class="insert-item" data-insert-type="script-连锁砍树">连锁砍树</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="event" style="display: none;">
+                  <li class="insert-item" data-insert-type="event-example">监听器</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="variable" style="display: none;">
+                  <li class="insert-item" data-insert-type="variable-global">全局变量</li>
+                  <li class="insert-item" data-insert-type="variable-local">局部变量</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="func" style="display: none;">
+                  <li class="insert-item" data-insert-type="func-global">全局函数</li>
+                  <li class="insert-item" data-insert-type="func-local">局部函数</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="assert" style="display: none;">
+                  <li class="insert-item" data-insert-type="assert-if">if语句</li>
+                  <li class="insert-item" data-insert-type="assert-ifelse">if……else语句</li>
+                  <li class="insert-item" data-insert-type="assert-ifelseif">if……elseif语句</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="loop" style="display: none;">
+                  <li class="insert-item" data-insert-type="loop-for">for循环</li>
+                  <li class="insert-item" data-insert-type="loop-while">while循环</li>
+                  <li class="insert-item" data-insert-type="loop-repeatUntil">repeat……until循环</li>
+                </ul>
+                <ul class="insert-list child" data-parent-type="table" style="display: none;">
+                  <li class="insert-item" data-insert-type="table-global">全局table</li>
+                  <li class="insert-item" data-insert-type="table-local">局部table</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <!--字体-->
+        <li class="menu-item">
+          <div class="font-wrapper menu-item-wrapper" id="fontWrapper">
+            <button class="font-btn menu-item-btn" id="fontBtn">字体</button>
+            <div class="font-inner menu-item-inner" id="fontInner">
+              <ul class="font-list">
+                <li class="font-item" data-size="12px">12px</li>
+                <li class="font-item" data-size="14px">14px</li>
+                <li class="font-item" data-size="16px">16px</li>
+                <li class="font-item" data-size="18px">18px</li>
+                <li class="font-item" data-size="20px">20px</li>
+                <li class="font-item" data-size="22px">22px</li>
+                <li class="font-item" data-size="24px">24px</li>
+                <li class="font-item" data-size="32px">32px</li>
+                <li class="font-item" data-size="48px">48px</li>
+                <li class="font-item" data-size="64px">64px</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <!-- id 库-->
+        <li class="menu-item">
+          <div class="idlib-wrapper menu-item-wrapper" id="idlibWrapper">
+            <button class="idlib-btn menu-item-btn" id="idlibBtn">ID库</button>
+            <div class="idlib-inner menu-item-inner" id="idlibInner">
+              <ul class="idlib-list">
+                <li class="idlib-item" data-type="1">方块</li>
+                <li class="idlib-item" data-type="2">道具</li>
+                <li class="idlib-item" data-type="3">生物</li>
+                <li class="idlib-item" data-type="4">特效</li>
+                <li class="idlib-item" data-type="5">音效</li>
+                <li class="idlib-item" data-type="6">状态</li>
+                <!-- <li class="idlib-item" data-type="7">镶嵌</li> -->
+                <li class="idlib-item" data-type="8">动作</li>
+                <li class="idlib-item" data-type="9">商品</li>
+                <li class="idlib-item" data-type="10">模型</li>
+                <li class="idlib-item" data-type="11">图片</li>
+                <li class="idlib-item" data-type="12">界面</li>
+                <li class="idlib-item" data-type="13">元件</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!--编辑器-->
+    <div id="codeEditor" class="code-editor"></div>
+    <!--wiki拖动时的遮罩-->
+    <div id="devWikiMask" class="dev-wiki-mask"></div>
+    <!--搜索id-->
+    <div id="searchIdWrapper" class="search-id-wrapper">
+      <div id="searchIdTitle" class="search-id-title">
+        <span>ID搜索工具</span>
+        <i class="close-icon" id="searchIdCloseIcon"></i>
+      </div>
+      <div class="search-id-inner">
+        <div id="searchIdInpWrapper" class="search-id-inpwrapper">
+          <input type="text" class="search-id-input" placeholder="请输入方块 ID 或 名称" id="searchIdInput">
+          <div class="history-list" id="searchIdHistoryList"></div>
+        </div>
+        <div id="searchIdListContainer" class="search-id-container">
+          <!-- id 列表 -->
+          <dl id="searchIdList">
+          </dl>
+        </div>
+      </div>
+    </div>
+    <!--wiki模块-->
+    <div id="devWiki" class="dev-wiki">
+      <div id="devWikiBar" class="dev-wiki-bar"></div>
+      <iframe src="https://developers.mini1.cn/wiki/API.html" frameborder="0"></iframe>
+      <button type="button" id="toggleWikiBtn" class="btn toggle-wiki-btn">Wiki</button>
+    </div>
+  </div>
+  <script src="./js/datapack.js"></script>
+  <script src="./js/insertCodeConfig.js"></script>
+  <script type="text/javascript" src="./js/app.js"></script>
+</body>
+
+</html>

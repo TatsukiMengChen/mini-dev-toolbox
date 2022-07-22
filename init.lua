@@ -1,0 +1,25 @@
+--名称
+appname="迷你开发者工具箱"
+--版本号
+appver="2.2.0"
+--版本
+appcode="220"
+--SDK
+appsdk="15"
+--包名
+packagename="com.mini.dev.toolbox"
+--调试模式
+debugmode=true
+--应用权限
+user_permission={
+  "ACCESS_NETWORK_STATE",
+  "DOWNLOAD_WITHOUT_NOTIFICATION",
+  "INTERNET",
+  "READ_EXTERNAL_STORAGE",
+  "VIBRATE",
+  "WRITE_EXTERNAL_STORAGE",
+}
+--跳过编译
+skip_compilation={
+
+}

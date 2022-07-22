@@ -1,0 +1,13 @@
+{
+  LinearLayout;
+  orientation="vertical";
+  background="#FFFFFF";
+  layout_width="fill";
+  layout_height="fill";
+  {
+    LuaWebView;
+    id="float_course_webview";
+    layout_width="fill";
+    layout_height="fill";
+  };
+};

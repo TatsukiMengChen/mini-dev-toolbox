@@ -1,0 +1,13 @@
+{
+  LinearLayout;
+  layout_width="fill";
+  layout_height="fill";
+  background="#FFFFFF";
+  {
+    GridView;
+    layout_width="fill";
+    layout_height="fill";
+    id="grid";
+    numColumns=2;
+  };
+};

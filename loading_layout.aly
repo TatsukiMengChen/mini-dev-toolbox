@@ -1,0 +1,41 @@
+{
+  LinearLayout;
+  orientation="vertical";
+  layout_width="fill";
+  layout_height="fill";
+  {
+    CardView;
+    layout_height="fill";
+    layout_width="fill";
+    CardElevation="0dp";
+    radius="0dp";
+    {
+      ImageView;
+      layout_height="fill";
+      layout_width="fill";
+      id="loading_image";
+      src="welcome.png";
+      scaleType="fitXY";
+    };
+    {
+      CardView;
+      layout_margin="20dp";
+      background="#aaaaaaaa";
+      id="skip";
+      radius="12dp";
+      layout_width="50dp";
+      layout_gravity="right";
+      CardElevation="0dp";
+      layout_height="24dp";
+      {
+        TextView;
+        text="跳过 5";
+        id="text";
+        layout_gravity="center";
+        textSize="14sp";
+        gravity="center";
+        textColor="#ffffff";
+      };
+    };
+  };
+};
