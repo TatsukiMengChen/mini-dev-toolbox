@@ -7,7 +7,7 @@ activity.setContentView(loadlayout("editor/script_factory/main_layout"))
 
 script = {
   {"添加物品","add_item"};
-
+  {"玩家飞行","player_fly"};
 }
 
 

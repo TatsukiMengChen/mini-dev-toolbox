@@ -5,6 +5,10 @@ import "android.content.Context"
 import "editor/script_factory/script/add_item_layout"
 activity.setContentView(loadlayout("editor/script_factory/script/add_item_layout"))
 import "res/id_table"
+editor_theme(editor)
+editor.Text=[[
+--点击生成脚本后脚本会在此显示，可自行修改后再点击复制脚本
+]]
 temp = false
 function match_name(val)
   for i = 1,#ids do
@@ -65,7 +69,7 @@ end
 function id_search.onClick()
   activity.newActivity("tools/id_search")
 end
-function copy.onClick()
+function create.onClick()
   script = [[
 --给指定玩家的背包添加物品
 --第一个参数为玩家迷你号
@@ -100,9 +104,10 @@ end
    else
     script = string.gsub(script,"<<物品数量>>","1")
   end
-  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(script)
+  editor.Text=script
+end
+function copy.onClick()
+  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(editor.Text)
   提示("已复制脚本到剪贴板")
 end
-
-
 

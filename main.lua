@@ -1,10 +1,13 @@
 require "import"
 import "mengchen"
 import "theme"
---[===[
-activity.newActivity("editor/script_factory/main")
-activity.finish()
-]===]
+import "android.graphics.Typeface"
+--activity.setContentView(loadlayout("home_layout"))
+
+
+--activity.newActivity("tools/material_export")
+--activity.finish()
+
 import "android.net.Uri"
 import "android.content.Intent"
 import "android.content.Context"
@@ -145,6 +148,86 @@ function get_express()
   end)
 end
 get_express()
+
+hot_layout={
+  LinearLayout;
+  orientation="vertical";
+  layout_width="fill";
+  layout_height="fill";
+  onClick=function()end;
+  {
+    CardView;
+    layout_gravity="center";
+    layout_width="140dp";
+    background="#FFFFFF";
+    layout_margin="10dp";
+    CardElevation="2dp";
+    radius="10dp";
+    layout_height="60dp";
+    {
+      LinearLayout;
+      orientation="horizontal";
+      layout_width="fill";
+      layout_height="fill";
+      gravity="center|left";
+      layout_marginLeft="6dp";
+      --style="?android:attr/buttonBarButtonStyle";
+      layout_gravity="center";
+      {
+        ImageView;
+        id="img";
+        layout_height="30dp";
+        layout_width="30dp";
+        layout_marginRight="10dp";
+      };
+      {
+        TextView;
+        id="text1";
+        textColor="#2196F3";
+        textSize="16sp";
+      };
+    };
+    {
+      LinearLayout;
+      layout_gravity="center";
+      gravity="center|left";
+      orientation="horizontal";
+      layout_width="fill";
+      layout_height="fill";
+      {
+        TextView;
+        textSize="20sp";
+        id="top_num";
+        gravity="center";
+        Typeface=Typeface.MONOSPACE;
+        textColor="#909090";
+        layout_marginLeft="20dp";
+        layout_marginRight="5dp";
+      };
+      {
+        TextView;
+        textSize="16sp";
+        id="text2";
+        textColor="#2196F3";
+      };
+    };
+
+  };
+};
+hot_adp=LuaAdapter(activity,hot_layout)
+hot.Adapter=hot_adp
+Http.get("https://kfz.mini1.cn/center/japi/pub/hot/hotKey/?size=10",nil,nil,nil,
+function(code,content)
+  if code == 200 then
+    local data=cjson.decode(content)
+    hot_adp.add{img="res/icon/top1.png",text1=data["data"][1]}
+    hot_adp.add{img="res/icon/top2.png",text1=data["data"][2]}
+    hot_adp.add{img="res/icon/top3.png",text1=data["data"][3]}
+    for i = 4,10 do
+      hot_adp.add{top_num=tostring(i),text2=data["data"][i]}
+    end
+  end
+end)
 
 the_words = "如果觉得迷你开发者工具箱有什么不足的地方，或者有什么好的推荐，期待你的反馈"
 the_author = "Tatsuki丶梦辰"

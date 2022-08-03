@@ -9,7 +9,7 @@ appsdk="15"
 --包名
 packagename="com.mini.dev.toolbox"
 --调试模式
-debugmode=true
+debugmode=false
 --应用权限
 user_permission={
   "ACCESS_NETWORK_STATE",

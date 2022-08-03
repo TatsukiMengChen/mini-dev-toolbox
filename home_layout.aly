@@ -243,6 +243,20 @@
         };
       };
       {
+        TextView;
+        text="迷你热榜";
+        textColor="#2196F3";
+        layout_marginLeft="15dp";
+        textSize="16sp";
+      };
+      {
+        GridView;
+        layout_width="fill";
+        layout_height="410dp";
+        id="hot";
+        numColumns=2;
+      };
+      {
         CardView;
         id="hitokoto_background";
         layout_marginBottom="20dp";

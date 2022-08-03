@@ -1,5 +1,44 @@
 import "android.graphics.PorterDuffColorFilter"
 import "android.graphics.PorterDuff"
+
+function editor_theme(editor,mode)
+if mode == "dark" then
+  editor.setUserwordColor(0xfff08d49)
+  editor.setStringColor(0xff7ec699)--字符串
+  editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
+  editor.setCommentColor(0xff969896)--注释颜色
+  editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
+  editor.setShowLineNumbers(true)
+  editor.setTextSize(30)
+  editor.setHighlightCurrentRow(true)
+  editor.setAutoIndentWidth(2);
+  editor.setTextColor(0xffffffff)
+  editor.setTextHighlightColor(0xff4a4e56)
+  editor.setBackgroundColor(0xff282c34)
+  editor.setPanelBackgroundColor(0x9f282c34)
+  editor.setPanelTextColor(0xffffffff)
+  else
+  editor.setUserwordColor(0xfff08d49)--用户词
+  editor.setTextColor(0xff000000)--文本
+  editor.setTextHighlightColor(0xff4a4e56)--高亮(文本选择)背景
+  editor.setStringColor(0xff7ec699)--字符串
+  editor.setPanelBackgroundColor(0x9f282c34)--补全背景
+  editor.setPanelTextColor(0xffffffff)--补全文字、边框
+  editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
+  editor.setCommentColor(0xff969896)--注释颜色
+  editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
+  editor.setShowLineNumbers(true)
+  editor.setBackgroundColor(0xffffffff)--背景颜色
+  editor.setTextSize(30)
+  editor.setTextHighlightColor(0xff4a4e56)
+  editor.setHighlightCurrentRow(true)
+  editor.setAutoIndentWidth(2);
+  end
+end
+
+
+
+
 function 解压zip(a1,a2,a3)
 import "zip4j.zip.z.zip类"
 sx = zip类()

@@ -1,203 +1,235 @@
 {
   LinearLayout;
-  layout_width="fill";
   layout_height="fill";
+  layout_width="fill";
   {
     ScrollView;
-    layout_width="match_parent";
     layout_height="match_parent";
+    layout_width="match_parent";
     {
       LinearLayout;
-      orientation="vertical";
-      layout_margin="20dp";
       layout_height="match_parent";
       layout_width="match_parent";
+      layout_margin="20dp";
+      orientation="vertical";
       {
         LinearLayout;
-        orientation="horizontal";
-        gravity="center";
         layout_width="match_parent";
+        gravity="center";
+        orientation="horizontal";
         {
           TextView;
           text="迷你号";
-          textSize="16sp";
           textColor="#2196F3";
+          textSize="16sp";
           layout_marginRight="10dp";
         };
         {
           CardView;
-          layout_width="match_parent";
           radius="20dp";
+          layout_width="match_parent";
           background="#f0f0f0";
-          layout_height="40dp";
           CardElevation="0dp";
+          layout_height="40dp";
           {
             EditText;
-            layout_width="match_parent";
-            id="迷你号";
-            hint="不填默认为房主";
-            layout_gravity="center";
             layout_height="match_parent";
             background="#00000000";
-            padding="10dp";
-            maxLines="1";
             textSize="18sp";
+            id="迷你号";
+            layout_width="match_parent";
+            layout_gravity="center";
+            maxLines="1";
+            hint="不填默认为房主";
+            padding="10dp";
           };
         };
       };
       {
         LinearLayout;
-        orientation="horizontal";
         layout_marginTop="10dp";
-        gravity="center";
         layout_width="match_parent";
+        gravity="center";
+        orientation="horizontal";
         {
           TextView;
           text="物品名称";
-          textSize="16sp";
           textColor="#2196F3";
+          textSize="16sp";
           layout_marginRight="10dp";
         };
         {
           CardView;
-          layout_width="match_parent";
           radius="20dp";
+          layout_width="match_parent";
           background="#f0f0f0";
-          layout_height="40dp";
           CardElevation="0dp";
+          layout_height="40dp";
           {
             EditText;
-            layout_width="match_parent";
-            id="物品名称";
-            hint="输入物品名称可自动补全ID";
-            layout_gravity="center";
             layout_height="match_parent";
             background="#00000000";
-            padding="10dp";
-            maxLines="1";
             textSize="18sp";
+            id="物品名称";
+            layout_width="match_parent";
+            layout_gravity="center";
+            maxLines="1";
+            hint="输入物品名称可自动补全ID";
+            padding="10dp";
           };
         };
       };
       {
         LinearLayout;
-        orientation="horizontal";
         layout_marginTop="10dp";
-        gravity="center";
         layout_width="match_parent";
+        gravity="center";
+        orientation="horizontal";
         {
           TextView;
           text="物品ID";
-          textSize="16sp";
           textColor="#2196F3";
+          textSize="16sp";
           layout_marginRight="10dp";
         };
         {
           CardView;
-          layout_width="match_parent";
           radius="20dp";
+          layout_width="match_parent";
           background="#f0f0f0";
+          CardElevation="0dp";
           layout_height="40dp";
           layout_weight="1";
-          CardElevation="0dp";
           {
             EditText;
-            layout_width="match_parent";
-            id="物品ID";
-            hint="输入物品ID可自动补全名称";
-            layout_gravity="center";
             layout_height="match_parent";
             background="#00000000";
-            padding="10dp";
-            maxLines="1";
             textSize="18sp";
+            id="物品ID";
+            layout_width="match_parent";
+            layout_gravity="center";
+            maxLines="1";
+            hint="输入物品ID可自动补全名称";
+            padding="10dp";
           };
         };
         {
           CardView;
-          layout_width="40dp";
           radius="8dp";
-          background="#FFFFFF";
+          layout_width="40dp";
           layout_margin="5dp";
-          layout_height="40dp";
+          background="#FFFFFF";
           CardElevation="5px";
+          layout_height="40dp";
           {
             ImageView;
+            layout_height="24dp";
             layout_width="24dp";
             layout_gravity="center";
-            layout_height="24dp";
             src="res/icon/id.png";
           };
           {
             LinearLayout;
+            layout_height="60dp";
             layout_width="60dp";
             layout_gravity="center";
-            layout_height="60dp";
-            id="id_search";
             style="?android:attr/buttonBarButtonStyle";
+            id="id_search";
           };
         };
       };
       {
         LinearLayout;
-        orientation="horizontal";
         layout_marginTop="10dp";
-        gravity="center";
         layout_width="match_parent";
+        gravity="center";
+        orientation="horizontal";
         {
           TextView;
           text="物品数量";
-          textSize="16sp";
           textColor="#2196F3";
+          textSize="16sp";
           layout_marginRight="10dp";
         };
         {
           CardView;
-          layout_width="match_parent";
           radius="20dp";
+          layout_width="match_parent";
           background="#f0f0f0";
-          layout_height="40dp";
           CardElevation="0dp";
+          layout_height="40dp";
           {
             EditText;
-            layout_width="match_parent";
-            textSize="18sp";
             layout_height="match_parent";
+            layout_width="match_parent";
             layout_gravity="center";
             background="#00000000";
-            padding="10dp";
             maxLines="1";
+            padding="10dp";
+            textSize="18sp";
             id="物品数量";
           };
         };
       };
       {
         LinearLayout;
-        layout_width="match_parent";
         gravity="center";
+        layout_width="match_parent";
         {
           CardView;
-          layout_width="80dp";
           radius="8dp";
-          background="#FFFFFF";
+          layout_width="80dp";
           layout_margin="10dp";
-          layout_height="40dp";
+          background="#FFFFFF";
           CardElevation="5px";
+          layout_height="40dp";
           {
             TextView;
-            text="复制脚本";
-            textSize="16sp";
+            text="生成脚本";
             textColor="#2196F3";
             layout_gravity="center";
+            textSize="16sp";
           };
           {
             LinearLayout;
+            layout_height="60dp";
             layout_width="100dp";
             layout_gravity="center";
-            layout_height="60dp";
-            id="copy";
             style="?android:attr/buttonBarButtonStyle";
+            id="create";
           };
+        };
+        {
+          CardView;
+          radius="8dp";
+          layout_width="80dp";
+          layout_margin="10dp";
+          background="#FFFFFF";
+          CardElevation="5px";
+          layout_height="40dp";
+          {
+            TextView;
+            text="复制脚本";
+            textColor="#2196F3";
+            layout_gravity="center";
+            textSize="16sp";
+          };
+          {
+            LinearLayout;
+            layout_height="60dp";
+            layout_width="100dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="copy";
+          };
+        };
+      };
+      {
+        LinearLayout;
+        layout_height="50%h";
+        {
+          LuaEditor;
+          id="editor";
         };
       };
     };
