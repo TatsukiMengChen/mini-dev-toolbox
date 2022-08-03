@@ -4,7 +4,6 @@ import "theme"
 import "android.graphics.Typeface"
 --activity.setContentView(loadlayout("home_layout"))
 
-
 --activity.newActivity("tools/material_export")
 --activity.finish()
 
