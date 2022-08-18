@@ -1,7 +1,7 @@
 {
   LinearLayout;
-  layout_width="fill";
   orientation="vertical";
+  layout_width="fill";
   background="#FAFAFA";
   layout_height="fill";
   {
@@ -10,19 +10,19 @@
     layout_width="fill";
     {
       Button;
-      onClick=function()activity.finish() end;
+      layout_margin="10dp";
       background="res/icon/direction-left.png";
       layout_height="30dp";
-      layout_width="30dp";
       layout_gravity="center";
-      layout_margin="10dp";
+      layout_width="30dp";
+      id="exit";
     };
     {
       TextView;
       textColor="#2196F3";
-      text="设置";
-      layout_gravity="center";
       textSize="24sp";
+      layout_gravity="center";
+      text="设置";
     };
   };
   {
@@ -40,11 +40,11 @@
         layout_width="fill";
         {
           TextView;
-          textColor="#2196F3";
-          layout_marginBottom="0dp";
-          text="Wiki模块";
-          layout_margin="10dp";
           textSize="18sp";
+          layout_marginBottom="0dp";
+          textColor="#2196F3";
+          layout_margin="10dp";
+          text="Wiki模块";
         };
         {
           LinearLayout;
@@ -52,21 +52,21 @@
           layout_width="fill";
           {
             EditText;
-            maxLines="3";
             layout_marginLeft="5dp";
-            id="wiki";
-            text="https://developers.mini1.cn/wiki/API.html";
             layout_width="300dp";
             layout_marginRight="5dp";
+            text="https://developers.mini1.cn/wiki/API.html";
             layout_gravity="center";
+            maxLines="3";
+            id="wiki";
           };
           {
             Button;
-            onClick="Wiki";
-            layout_gravity="center";
             layout_width="30dp";
             background="res/icon/save.png";
+            onClick="Wiki";
             layout_height="30dp";
+            layout_gravity="center";
           };
         };
       };
@@ -76,11 +76,11 @@
         layout_width="fill";
         {
           TextView;
-          textColor="#2196F3";
-          layout_marginBottom="0dp";
-          text="缓存清理";
-          layout_margin="10dp";
           textSize="18sp";
+          layout_marginBottom="0dp";
+          textColor="#2196F3";
+          layout_margin="10dp";
+          text="缓存清理";
         };
         {
           LinearLayout;
@@ -88,22 +88,57 @@
           layout_width="fill";
           {
             TextView;
-            id="cache_size";
-            layout_marginLeft="5dp";
-            text="0MB";
-            textSize="18sp";
-            layout_width="295dp";
             layout_marginLeft="10dp";
+            textSize="18sp";
             layout_marginRight="5dp";
+            text="0MB";
             layout_gravity="center";
+            layout_width="295dp";
+            id="cache_size";
           };
           {
             Button;
-            layout_gravity="center";
-            id="clean_cache";
             layout_width="30dp";
             background="res/icon/ashbin.png";
+            layout_gravity="center";
             layout_height="30dp";
+            id="clean_cache";
+          };
+        };
+      };
+      {
+        LinearLayout;
+        orientation="vertical";
+        layout_width="fill";
+        {
+          TextView;
+          textSize="18sp";
+          layout_marginBottom="0dp";
+          textColor="#2196F3";
+          layout_margin="10dp";
+          text="清除网站浏览数据";
+        };
+        {
+          LinearLayout;
+          orientation="horizontal";
+          layout_width="fill";
+          {
+            TextView;
+            layout_marginLeft="10dp";
+            textSize="18sp";
+            layout_marginRight="5dp";
+            text="0MB";
+            layout_gravity="center";
+            layout_width="295dp";
+            id="browse_size";
+          };
+          {
+            Button;
+            layout_width="30dp";
+            background="res/icon/ashbin.png";
+            layout_gravity="center";
+            layout_height="30dp";
+            id="clean_browse";
           };
         };
       };

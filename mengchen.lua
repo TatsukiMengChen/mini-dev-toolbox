@@ -2,37 +2,37 @@ import "android.graphics.PorterDuffColorFilter"
 import "android.graphics.PorterDuff"
 
 function editor_theme(editor,mode)
-if mode == "dark" then
-  editor.setUserwordColor(0xfff08d49)
-  editor.setStringColor(0xff7ec699)--字符串
-  editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
-  editor.setCommentColor(0xff969896)--注释颜色
-  editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
-  editor.setShowLineNumbers(true)
-  editor.setTextSize(30)
-  editor.setHighlightCurrentRow(true)
-  editor.setAutoIndentWidth(2);
-  editor.setTextColor(0xffffffff)
-  editor.setTextHighlightColor(0xff4a4e56)
-  editor.setBackgroundColor(0xff282c34)
-  editor.setPanelBackgroundColor(0x9f282c34)
-  editor.setPanelTextColor(0xffffffff)
-  else
-  editor.setUserwordColor(0xfff08d49)--用户词
-  editor.setTextColor(0xff000000)--文本
-  editor.setTextHighlightColor(0xff4a4e56)--高亮(文本选择)背景
-  editor.setStringColor(0xff7ec699)--字符串
-  editor.setPanelBackgroundColor(0x9f282c34)--补全背景
-  editor.setPanelTextColor(0xffffffff)--补全文字、边框
-  editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
-  editor.setCommentColor(0xff969896)--注释颜色
-  editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
-  editor.setShowLineNumbers(true)
-  editor.setBackgroundColor(0xffffffff)--背景颜色
-  editor.setTextSize(30)
-  editor.setTextHighlightColor(0xff4a4e56)
-  editor.setHighlightCurrentRow(true)
-  editor.setAutoIndentWidth(2);
+  if mode == "dark" then
+    editor.setUserwordColor(0xfff08d49)
+    editor.setStringColor(0xff7ec699)--字符串
+    editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
+    editor.setCommentColor(0xff969896)--注释颜色
+    editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
+    editor.setShowLineNumbers(true)
+    editor.setTextSize(30)
+    editor.setHighlightCurrentRow(true)
+    editor.setAutoIndentWidth(2);
+    editor.setTextColor(0xffffffff)
+    editor.setTextHighlightColor(0xff4a4e56)
+    editor.setBackgroundColor(0xff282c34)
+    editor.setPanelBackgroundColor(0x9f282c34)
+    editor.setPanelTextColor(0xffffffff)
+   else
+    editor.setUserwordColor(0xfff08d49)--用户词
+    editor.setTextColor(0xff000000)--文本
+    editor.setTextHighlightColor(0xff4a4e56)--高亮(文本选择)背景
+    editor.setStringColor(0xff7ec699)--字符串
+    editor.setPanelBackgroundColor(0x9f282c34)--补全背景
+    editor.setPanelTextColor(0xffffffff)--补全文字、边框
+    editor.setKeywordColor(0xffcc99cd)--关键词(function、local等)
+    editor.setCommentColor(0xff969896)--注释颜色
+    editor.setBasewordColor(0xfff08d49)--基本词(require、activity等)
+    editor.setShowLineNumbers(true)
+    editor.setBackgroundColor(0xffffffff)--背景颜色
+    editor.setTextSize(30)
+    editor.setTextHighlightColor(0xff4a4e56)
+    editor.setHighlightCurrentRow(true)
+    editor.setAutoIndentWidth(2);
   end
 end
 
@@ -40,40 +40,40 @@ end
 
 
 function 解压zip(a1,a2,a3)
-import "zip4j.zip.z.zip类"
-sx = zip类()
-if a3 == nil then
-return sx.解压(a1,a2,nil)
-else
-return sx.解压(a1,a2,a3)
-end
+  import "zip4j.zip.z.zip类"
+  sx = zip类()
+  if a3 == nil then
+    return sx.解压(a1,a2,nil)
+   else
+    return sx.解压(a1,a2,a3)
+  end
 end
 
 
 function 压缩zip(a1,a2,a3)
-import "zip4j.zip.z.zip类"
-sx = zip类()
-if a3 == nil then
-return sx.压缩(a1,a2,nil)
-else
-return sx.压缩(a1,a2,a3)
-end
+  import "zip4j.zip.z.zip类"
+  sx = zip类()
+  if a3 == nil then
+    return sx.压缩(a1,a2,nil)
+   else
+    return sx.压缩(a1,a2,a3)
+  end
 end
 
 function 单解压(q,w,e,r)
-import "zip4j.zip.z.zip类"
-sx = zip类()
-if r == nil then
-return sx.单个解压(q,w,e,nil)
-else
-return sx.单个解压(q,w,e,r)
-end
+  import "zip4j.zip.z.zip类"
+  sx = zip类()
+  if r == nil then
+    return sx.单个解压(q,w,e,nil)
+   else
+    return sx.单个解压(q,w,e,r)
+  end
 end
 
 function 是否密码(file)
-import "zip4j.zip.z.zip类"
-sx = zip类()
-return sx.是否有密码(file)
+  import "zip4j.zip.z.zip类"
+  sx = zip类()
+  return sx.是否有密码(file)
 end
 --获取zip文件内容
 function getZipfiletext(zipfile,file,code)
@@ -441,19 +441,25 @@ function file_chooser(StartPath,event,theme)
   SetItem(StartPath)
 end
 --获取文件目录大小
-function GetFileSize(path)
+function GetFileSize(path,return_type)
   import "java.io.File"
-  file_list=luajava.astable(File(path).listFiles())
+  local file_list=luajava.astable(File(path).listFiles())
   import "android.text.format.Formatter"
   local size = 0
   for i in pairs(file_list) do
-    size=size+File(tostring(file_list[i])).length()
+    if File(tostring(file_list[i])).isDirectory()== true then
+      size = size + GetFileSize(tostring(file_list[i]),"number")
+     else
+      size=size+File(tostring(file_list[i])).length()
+    end
   end
-  local Sizes=Formatter.formatFileSize(activity, size)
-  return Sizes
+  if return_type == "number" then
+    return size
+   else
+    local Sizes=Formatter.formatFileSize(activity, size)
+    return Sizes
+  end
 end
-
-
 
 
 

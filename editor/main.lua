@@ -29,8 +29,9 @@ function markdown_to_html.onClick()
   --activity.newActivity("editor/lua_editor")
 end
 function markdown_editor.onClick()
+  
   local path = activity.getLuaDir()
-  temporary('webview.loadUrl("'..path..'/editor/markdown_editor/index.html")')
+  temporary('webview.loadUrl("https://helloworld.net/html2md")')
   activity.newActivity("webview")
 end
 function wordhtml.onLongClick()

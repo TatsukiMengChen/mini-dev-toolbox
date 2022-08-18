@@ -2,8 +2,8 @@ require "import"
 import "mengchen"
 import "theme"
 import "android.graphics.Typeface"
+--LuaUtil.copyDir("/data/data/com.mini.dev.toolbox/","/sdcard/devToolbox/test/")
 --activity.setContentView(loadlayout("home_layout"))
-
 --activity.newActivity("tools/material_export")
 --activity.finish()
 
@@ -129,7 +129,9 @@ function get_express()
   dataurl="https://www.mini1.cn/landing/getdata"
   Http.get(dataurl,nil,"utf8",nil,function(code,content)
     if code == 200 then
-      local data = cjson.decode(content);
+      local data = string.sub(content,1,(#content-2))
+      local data = string.sub(data,15,#data)
+      local data = cjson.decode(data);
       express1.Text=data["news"][1]["title"]
       express1_time.Text=data["news"][1]["create_date"]
       express2.Text=data["news"][2]["title"]
