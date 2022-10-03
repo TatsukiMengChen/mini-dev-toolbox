@@ -1,35 +1,35 @@
 {
   LinearLayout;
-  layout_height="fill";
   gravity="center";
+  layout_height="fill";
   layout_width="fill";
   {
     ScrollView;
-    VerticalScrollBarEnabled=false;
     layout_height="fill";
+    VerticalScrollBarEnabled=false;
     layout_width="fill";
     {
       LinearLayout;
-      layout_gravity="center|top";
-      layout_height="fill";
       orientation="vertical";
+      layout_height="fill";
+      layout_gravity="center|top";
       {
         CardView;
-        layout_gravity="left";
-        background="#FFFFFF";
-        layout_height="120dp";
-        layout_marginBottom="0dp";
-        CardElevation="5dp";
-        radius="10dp";
-        layout_width="fill";
         layout_margin="20dp";
+        layout_width="fill";
+        background="#FFFFFF";
+        layout_gravity="left";
+        layout_marginBottom="0dp";
+        radius="10dp";
+        layout_height="120dp";
+        CardElevation="5dp";
         {
           LinearLayout;
           layout_gravity="center";
+          layout_width="360dp";
+          gravity="center";
           layout_height="140dp";
           orientation="vertical";
-          gravity="center";
-          layout_width="360dp";
           {
             ImageView;
             src="res/icon/modular.png";
@@ -38,52 +38,96 @@
           };
           {
             TextView;
-            textColor="#2196F3";
-            textSize="16sp";
             text="脚本工厂";
+            textSize="16sp";
+            textColor="#2196F3";
           };
         };
         {
           LinearLayout;
-          layout_gravity="center";
-          layout_height="140dp";
-          id="script_factory";
-          orientation="vertical";
-          style="?android:attr/buttonBarButtonStyle";
-          gravity="center";
           layout_width="360dp";
+          gravity="center";
+          layout_gravity="center";
+          style="?android:attr/buttonBarButtonStyle";
+          id="script_factory";
+          layout_height="140dp";
+          orientation="vertical";
         };
       };
       {
         TextView;
-        textColor="#2196F3";
+        text="音乐开发工具";
         textSize="18sp";
-        text="脚本开发工具";
-        layout_marginBottom="0dp";
         layout_margin="20dp";
+        textColor="#2196F3";
       };
       {
         LinearLayout;
         layout_height="120dp";
         {
           CardView;
-          layout_gravity="left";
-          background="#FFFFFF";
-          layout_height="fill";
-          layout_marginBottom="0dp";
-          CardElevation="5dp";
-          radius="10dp";
-          layout_width="150dp";
           layout_margin="20dp";
+          layout_width="150dp";
+          background="#FFFFFF";
+          layout_gravity="left";
+          layout_marginBottom="0dp";
+          radius="10dp";
+          layout_height="fill";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="script_editor";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="music_editor";
+            layout_height="130dp";
+            orientation="vertical";
+            {
+              ImageView;
+              src="res/icon/music.png";
+              layout_height="30dp";
+              layout_width="30dp";
+            };
+            {
+              TextView;
+              text="音乐编辑器";
+              textSize="16sp";
+              textColor="#2196F3";
+            };
+          };
+        };
+      };
+      {
+        TextView;
+        text="脚本开发工具";
+        layout_marginTop="0dp";
+        layout_margin="20dp";
+        textColor="#2196F3";
+        textSize="18sp";
+      };
+      {
+        LinearLayout;
+        layout_height="120dp";
+        {
+          CardView;
+          layout_margin="20dp";
+          layout_width="150dp";
+          background="#FFFFFF";
+          layout_gravity="left";
+          layout_marginBottom="0dp";
+          radius="10dp";
+          layout_height="fill";
+          CardElevation="5dp";
+          {
+            LinearLayout;
+            layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="script_editor";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/code.png";
@@ -92,32 +136,32 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="脚本编辑器";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_marginLeft="0dp";
-          layout_marginBottom="0dp";
           layout_margin="20dp";
           layout_gravity="right";
           layout_height="fill";
+          layout_width="150dp";
           background="#FFFFFF";
+          layout_marginBottom="0dp";
           CardElevation="5dp";
           radius="10dp";
-          layout_width="150dp";
+          layout_marginLeft="0dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="lua_editor";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="lua_editor";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/lua.png";
@@ -126,43 +170,43 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="Lua编辑器";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };
       };
       {
         TextView;
-        textColor="#2196F3";
-        textSize="18sp";
         text="学院写稿工具（建议长按使用浏览器打开）";
         layout_marginTop="0dp";
         layout_margin="20dp";
+        textColor="#2196F3";
+        textSize="18sp";
       };
       {
         LinearLayout;
         layout_height="120dp";
         {
           CardView;
-          layout_gravity="left";
-          background="#FFFFFF";
-          layout_height="fill";
-          layout_marginBottom="0dp";
-          CardElevation="5dp";
-          radius="10dp";
-          layout_width="150dp";
           layout_margin="20dp";
+          layout_width="150dp";
+          background="#FFFFFF";
+          layout_gravity="left";
+          layout_marginBottom="0dp";
+          radius="10dp";
+          layout_height="fill";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="wordhtml";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="wordhtml";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/wordhtml.png";
@@ -171,32 +215,32 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="Word转HTML";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_marginLeft="0dp";
-          layout_marginBottom="0dp";
           layout_margin="20dp";
           layout_gravity="right";
           layout_height="fill";
+          layout_width="150dp";
           background="#FFFFFF";
+          layout_marginBottom="0dp";
           CardElevation="5dp";
           radius="10dp";
-          layout_width="150dp";
+          layout_marginLeft="0dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="spck_editor";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="spck_editor";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/spck_editor.png";
@@ -205,9 +249,9 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="Spck Editor";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };
@@ -217,23 +261,23 @@
         layout_height="120dp";
         {
           CardView;
-          layout_gravity="left";
-          background="#FFFFFF";
-          layout_height="fill";
-          layout_marginBottom="0dp";
-          CardElevation="5dp";
-          radius="10dp";
-          layout_width="150dp";
           layout_margin="20dp";
+          layout_width="150dp";
+          background="#FFFFFF";
+          layout_gravity="left";
+          layout_marginBottom="0dp";
+          radius="10dp";
+          layout_height="fill";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="markdown_to_html";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="markdown_to_html";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/Markdown_to_html.png";
@@ -242,32 +286,32 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="Markdown转HTML";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_marginLeft="0dp";
-          layout_marginBottom="0dp";
           layout_margin="20dp";
           layout_gravity="right";
           layout_height="fill";
+          layout_width="150dp";
           background="#FFFFFF";
+          layout_marginBottom="0dp";
           CardElevation="5dp";
           radius="10dp";
-          layout_width="150dp";
+          layout_marginLeft="0dp";
           {
             LinearLayout;
-            layout_gravity="center";
-            layout_height="130dp";
-            id="markdown_editor";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
-            gravity="center";
             layout_width="160dp";
+            gravity="center";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            id="markdown_editor";
+            layout_height="130dp";
+            orientation="vertical";
             {
               ImageView;
               src="res/icon/markdown.png";
@@ -276,9 +320,9 @@
             };
             {
               TextView;
-              textColor="#2196F3";
-              textSize="16sp";
               text="Markdown编辑器";
+              textSize="16sp";
+              textColor="#2196F3";
             };
           };
         };

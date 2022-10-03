@@ -1,1 +1,1 @@
-webview.loadUrl("https://spck.io")
+webview.loadUrl("https://tatsukimengchen.github.io/MusicScript/")

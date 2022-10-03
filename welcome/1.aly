@@ -1,0 +1,37 @@
+{
+  LinearLayout;
+  layout_width="fill";
+  orientation="vertical";
+
+  {
+    LinearLayout;
+    layout_height="80dp";
+    layout_width="match_parent";
+    {
+      ImageView;
+      layout_width="60dp";
+      src="icon.png";
+      layout_marginTop="10dp";
+      layout_height="60dp";
+      layout_marginLeft="20dp";
+    };
+    {
+      TextView;
+      textColor="#0";
+      textSize="16sp";
+      text="为迷你世界开发者而生的工具箱APP";
+      layout_gravity="center";
+      layout_marginLeft="10dp";
+    };
+  };
+  {
+    LinearLayout;
+    layout_height="match_parent";
+    {
+      ImageView;
+      src="res/icon/Illustration/cube.png";
+      layout_gravity="center";
+      layout_margin="20dp";
+    };
+  };
+};

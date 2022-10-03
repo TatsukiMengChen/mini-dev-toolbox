@@ -39,6 +39,11 @@ function help.onClick()
   url="https://tatsukimengchen.github.io/devToolbox/"
   activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
 end
+
+function privacy.onClick()
+  activity.newActivity("user/privacy")
+end
+
 function check_update.onClick()
   dataurl="http://tool.bitefu.net/lanzou/?url=https://tatsuki-mengchen.lanzoub.com/i8vOH0461g4h&pwd=bv72"
   Http.get(dataurl,nil,"utf8",nil,function(code,content)

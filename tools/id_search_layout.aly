@@ -1,37 +1,37 @@
 {
   LinearLayout;
-  orientation="vertical";
-  layout_height="fill";
-  layout_width="fill";
   background="#FFFFFF";
+  layout_height="fill";
+  orientation="vertical";
+  layout_width="fill";
   {
     CardView;
+    radius="20dp";
     layout_margin="20dp";
     elevation="5dp";
-    radius="20dp";
-    layout_width="fill";
-    layout_height="40dp";
-    layout_marginBottom="10dp";
     background="#FFFFFF";
+    layout_height="40dp";
+    layout_width="fill";
+    layout_marginBottom="10dp";
     {
       EditText;
-      layout_width="fill";
       hint="在此输入需要搜索的ID或名称";
       layout_marginLeft="10dp";
-      gravity="left";
       layout_marginRight="10dp";
+      background="#FFFFFF";
+      layout_width="fill";
       layout_height="fill";
       id="edit";
-      background="#FFFFFF";
+      gravity="left";
     };
     {
       Button;
-      layout_margin="5dp";
-      layout_marginRight="15dp";
       layout_gravity="end";
-      layout_width="30dp";
-      layout_height="30dp";
+      layout_marginRight="15dp";
       id="search";
+      layout_margin="5dp";
+      layout_height="30dp";
+      layout_width="30dp";
       background="res/icon/search.png";
     };
   };
@@ -39,29 +39,91 @@
     CardView;
     layout_margin="20dp";
     radius="20dp";
-    layout_height="fill";
-    CardElevation="5dp";
-    layout_width="fill";
+    layout_marginTop="0dp";
     background="#FFFFFF";
+    layout_width="fill";
+    layout_height="40dp";
+    elevation="5dp";
+    layout_marginBottom="0dp";
+    {
+      LinearLayout;
+      gravity="center";
+      layout_height="match_parent";
+      orientation="horizontal";
+      layout_width="match_parent";
+      {
+        LinearLayout;
+          id="itemid";
+        {
+          TextView;
+          textSize="16sp";
+          layout_margin="10dp";
+          textColor="#2196f3";
+          text="物品";
+        };
+      };
+      {
+        LinearLayout;
+          id="actorid";
+        {
+          TextView;
+          textSize="16sp";
+          layout_margin="10dp";
+          textColor="#2196f3";
+          text="生物";
+        };
+      };
+      {
+        LinearLayout;
+          id="modelid";
+        {
+          TextView;
+          textSize="16sp";
+          layout_margin="10dp";
+          textColor="#2196f3";
+          text="模型";
+        };
+      };
+      {
+        LinearLayout;
+          id="global_effectid";
+        {
+          TextView;
+          textSize="16sp";
+          layout_margin="10dp";
+          textColor="#2196f3";
+          text="全局效果";
+        };
+      };
+    };
+  };
+  {
+    CardView;
+    radius="20dp";
+    CardElevation="5dp";
+    background="#FFFFFF";
+    layout_height="fill";
+    layout_margin="20dp";
+    layout_width="fill";
     {
       LinearLayout;
       layout_width="fill";
       layout_height="fill";
       {
         ListView;
+        id="list1";
         layout_weight="1";
         layout_height="fill";
-        id="list1";
-        layout_width="fill";
         fastScrollEnabled=true;
+        layout_width="fill";
       };
       {
         ListView;
+        id="list2";
         layout_weight="1";
         layout_height="fill";
-        id="list2";
-        layout_width="fill";
         fastScrollEnabled=true;
+        layout_width="fill";
       };
     };
   };

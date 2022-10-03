@@ -285,6 +285,23 @@
             layout_gravity="center";
           };
         };
+      {
+          CardView;
+          layout_marginTop="0dp";
+          id="privacy";
+          layout_margin="10dp";
+          background="#FFFFFF";
+          layout_width="fill";
+          radius="30dp";
+          layout_height="60dp";
+          {
+            TextView;
+            textSize="18sp";
+            textColor="#2196F3";
+            text="隐私政策";
+            layout_gravity="center";
+          };
+        };
       };
     };
   };

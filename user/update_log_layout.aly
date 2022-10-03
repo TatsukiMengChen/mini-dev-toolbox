@@ -5,25 +5,43 @@
   layout_height="fill";
   {
     LinearLayout;
-    layout_width="match_parent";
-    layout_margin="20dp";
     layout_height="match_parent";
+    layout_width="match_parent";
     orientation="vertical";
+    layout_margin="20dp";
     {
       TextView;
       textSize="28sp";
-      textColor="#2196F3";
       text="更新日志";
+      textColor="#2196F3";
     };
     {
       TextView;
       textSize="24sp";
+      text="v2.3.0 (2022.10.3)";
       textColor="#2196F3";
-      text="v2.2.1 (2022.8.18)";
     };
     {
       TextView;
+      textIsSelectable=true;
+      text=[==[1. 新增软件使用引导，对新人更加友好
+2. 新增编辑器-音乐编辑器
+3. 工具-ID搜索工具支持搜索更多类型的ID
+4. 新增我的-关于与帮助-隐私政策
+5. 优化工具-ID搜索工具的搜索逻辑
+6. 修复未获取储存权限导致报错的问题]==];
       textSize="18sp";
+      textColor="#000000";
+    };
+    {
+      TextView;
+      textSize="24sp";
+      text="v2.2.1 (2022.8.18)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textIsSelectable=true;
       text=[==[1. 兼容安卓12
 2. 新增主页 - 迷你热榜，快速获取开发灵感
 3. 新增编辑器 - 脚本工厂 - 玩家飞行
@@ -31,18 +49,18 @@
 5. 调整编辑器 - Markdown编辑器，使用更高级的编辑器
 6. 修复主页 - 快报获取失败的问题
 7. 迷你开发者工具箱帮助文档更新内容请在文档内查看]==];
-      textIsSelectable=true;
+      textSize="18sp";
       textColor="#000000";
     };
     {
       TextView;
       textSize="24sp";
-      textColor="#2196F3";
       text="v2.2.0 (2022.7.22)";
+      textColor="#2196F3";
     };
     {
       TextView;
-      textSize="18sp";
+      textIsSelectable=true;
       text=[==[1. 新增启动广告图
 2. 新增编辑器 - 脚本工厂 - 添加物品，提供可视化脚本生成工具，简单易用
 3. 新增工具 - 游戏素材提取工具，一键提取游戏装扮图片
@@ -50,34 +68,33 @@
 5. 修复安装包可能无法解析、报毒的问题
 6. 使用新的签名
 7. 迷你开发者工具箱帮助文档更新大量文章]==];
-      textIsSelectable=true;
+      textSize="18sp";
       textColor="#000000";
     };
     {
       TextView;
       textSize="24sp";
-      textColor="#2196F3";
       text="v2.1.2 (2022.6.18)";
+      textColor="#2196F3";
     };
     {
       TextView;
-      textSize="18sp";
+      textIsSelectable=true;
       text=[==[1. 教程长按可切换为迷你开发者工具箱帮助文档
 2. 关于界面内的帮助与反馈改为迷你开发者工具箱帮助文档
 ● 关于迷你开发者工具箱帮助文档的更多内容详见：https://tatsukimengchen.github.io/devToolbox/]==];
-      textIsSelectable=true;
+      textSize="18sp";
       textColor="#000000";
     };
     {
       TextView;
       textSize="24sp";
-      textColor="#2196F3";
       text="v2.1.1 (2022.6.8)";
+      textColor="#2196F3";
     };
     {
       TextView;
       textSize="18sp";
-      textColor="#000000";
       text=[==[1. 主页新增轮播图
 2. 主页新增快报
 ● 更加快捷获取最近的游戏更新内容以及相关游戏活动
@@ -85,17 +102,17 @@
     例如输入chat可补全为：
     Chat:sendChat(content, targetuin)
 4. 修复更新提示显示"&nbsp;"的bug]==];
+      textColor="#000000";
     };
     {
       TextView;
       textSize="24sp";
-      textColor="#2196F3";
       text="v2.1.0 (2022.6.5)";
+      textColor="#2196F3";
     };
     {
       TextView;
       textSize="18sp";
-      textColor="#000000";
       text=[==[1. 新增Lua编辑器 （更高级的脚本编辑器）
 ● 支持代码高亮
 ● 支持切换主题
@@ -110,17 +127,17 @@
 3. 优化横屏/平板使用体验
 4. 修复一言、每日一图可能无法加载的bug
 5. 修复更新后更新日志自动弹出失败的bug]==];
+      textColor="#000000";
     };
     {
       TextView;
       textSize="24sp";
-      textColor="#2196F3";
       text="v2.0 (2022.5.2)";
+      textColor="#2196F3";
     };
     {
       TextView;
       textSize="18sp";
-      textColor="#000000";
       text=[==[1. "迷你工具箱"更名为"迷你开发者工具箱"
 2. 使用新包名：com.mini.dev.toolbox（原包名：com.mengchen.minitoolbox）
 3. 全新UI，更加美观
@@ -134,6 +151,7 @@
 11. 新增迷你号绑定
 12. 关于界面新增帮助与反馈功能
 13. 修复了一些bug]==];
+      textColor="#000000";
     };
   };
 };

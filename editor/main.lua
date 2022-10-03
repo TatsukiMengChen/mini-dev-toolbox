@@ -3,6 +3,12 @@ function script_factory.onClick()
   --msg'功能还未更新，下个版本再来吧！'
   activity.newActivity("editor/script_factory/main")
 end
+function music_editor.onClick()
+  local path = activity.getLuaDir()
+  temporary('webview.loadUrl("https://tatsukimengchen.github.io/MusicScript/")')
+  activity.newActivity("webview")
+  提示"温馨提示：横屏使用体验更佳"
+end
 function script_editor.onClick()
   local path = activity.getLuaDir()
   temporary('webview.loadUrl("'..path..'/editor/script_editor/index.html")')
@@ -29,10 +35,14 @@ function markdown_to_html.onClick()
   --activity.newActivity("editor/lua_editor")
 end
 function markdown_editor.onClick()
-  
+
   local path = activity.getLuaDir()
   temporary('webview.loadUrl("https://helloworld.net/html2md")')
   activity.newActivity("webview")
+end
+function music_editor.onLongClick()
+  url="https://tatsukimengchen.github.io/MusicScript/"
+  activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
 end
 function wordhtml.onLongClick()
   url="https://wordhtml.com"

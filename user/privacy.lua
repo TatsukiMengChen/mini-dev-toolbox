@@ -1,83 +1,7 @@
 require "import"
 import "theme"
-import "mengchen"
-import "settings"
 import "android.text.Html"
-if 文件是否存在("/sdcard") == true then
-  settings = settings_decode()
-  if settings.used == true then
-    activity.newActivity("main1")
-    activity.finish()
-  end
-end
-activity.setContentView("welcome/main")
-val = 0
-linearParams = progress_bar.getLayoutParams()
-width = linearParams.width
-bt1.visibility = 8
-function next.onClick()
-  if val == 0 then
-    val = 1
-    pages.showPage(1)
-    bt1.visibility = 0
-    title.Text = "隐私政策"
-    linearParams.width = width * 2
-    progress_bar.setLayoutParams(linearParams)
-   elseif val == 1 then
-    if check.checked == true then
-      val = 2
-      pages.showPage(2)
-      title.Text = "权限申请"
-      linearParams.width = width * 3
-      progress_bar.setLayoutParams(linearParams)
-
-     else
-      msg"请阅读并同意隐私政策！"
-    end
-   elseif val == 2 then
-    if 文件是否存在("/sdcard") == true then
-      val = 3
-      pages.showPage(3)
-      title.Text = "准备就绪"
-      next_text.Text = "完成"
-      linearParams.width = width * 4
-      progress_bar.setLayoutParams(linearParams)
-     else
-      msg"请在手机设置中授予储存权限"
-    end
-   elseif val == 3 then
-    settings = settings_decode()
-    settings.used = true
-    settings_encode(settings)
-    activity.newActivity("main1")
-    activity.finish()
-  end
-end
-
-function last.onClick()
-  if val == 1 then
-    val = 0
-    pages.showPage(0)
-    bt1.visibility = 8
-    title.Text = "迷你开发者工具箱"
-    linearParams.width = width
-    progress_bar.setLayoutParams(linearParams)
-   elseif val == 2 then
-    val = 1
-    title.Text = "隐私政策"
-    pages.showPage(1)
-    linearParams.width = width * 2
-    progress_bar.setLayoutParams(linearParams)
-   elseif val == 3 then
-    val = 2
-    title.Text = "权限申请"
-    next_text.Text = "下一步"
-    pages.showPage(2)
-    linearParams.width = width * 3
-    progress_bar.setLayoutParams(linearParams)
-  end
-end
-
+activity.setContentView("user/privacy_layout")
 
 
 
@@ -115,8 +39,6 @@ text1 = [[<h3>隐私政策</h3>
 <p>如果您对我的隐私政策有任何疑问或建议，请随时通过s3224815186@163.com与我联系。</p>]]
 
 privacy.setText(Html.fromHtml(text1))
-
-
 
 
 

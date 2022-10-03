@@ -1,21 +1,23 @@
 --名称
 appname="迷你开发者工具箱"
 --版本号
-appver="2.2.1"
+appver="2.3.0"
 --版本
-appcode="221"
+appcode="230"
 --SDK
-appsdk="15"
+appsdk="21"
 --包名
 packagename="com.mini.dev.toolbox"
 --调试模式
-debugmode=true
+debugmode=false
 --应用权限
 user_permission={
-  "ACCESS_NETWORK_STATE",
   "DOWNLOAD_WITHOUT_NOTIFICATION",
+  "GET_PACKAGE_SIZE",
   "INTERNET",
   "READ_EXTERNAL_STORAGE",
+  "REQUEST_INSTALL_PACKAGES",
+  "SYSTEM_ALERT_WINDOW",
   "VIBRATE",
   "WRITE_EXTERNAL_STORAGE",
 }
