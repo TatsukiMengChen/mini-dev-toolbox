@@ -1,4 +1,13 @@
 import "cjson"
+function 文件是否存在(path)
+  import "java.io.*"
+  file,err=io.open(path)
+  if err==nil then
+    return true
+   else
+    return false
+  end
+end
 function settings_decode(settings)
   if 文件是否存在("/sdcard") == true then
     path = "/sdcard/devToolbox/config.cfg"

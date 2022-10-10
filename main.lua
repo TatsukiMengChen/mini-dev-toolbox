@@ -1,5 +1,8 @@
 require "import"
+import "res/init"
 import "theme"
+--activity.newActivity("tools/trigger_to_script")
+--activity.finish()
 import "mengchen"
 import "settings"
 import "android.text.Html"
@@ -115,8 +118,5 @@ text1 = [[<h3>隐私政策</h3>
 <p>如果您对我的隐私政策有任何疑问或建议，请随时通过s3224815186@163.com与我联系。</p>]]
 
 privacy.setText(Html.fromHtml(text1))
-
-
-
 
 

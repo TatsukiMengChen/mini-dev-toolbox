@@ -236,7 +236,7 @@ function OpenFile(path)
   end
 end
 --文件选择器
-function file_chooser(StartPath,event,theme)
+function file_chooser1(StartPath,event,theme)
   if theme==1 then
     主题="#ff212121"
     强调="#ffffffff"

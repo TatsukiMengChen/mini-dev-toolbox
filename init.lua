@@ -1,9 +1,9 @@
 --名称
 appname="迷你开发者工具箱"
 --版本号
-appver="2.3.0"
+appver="2.3.1 - beta"
 --版本
-appcode="230"
+appcode="231"
 --SDK
 appsdk="21"
 --包名

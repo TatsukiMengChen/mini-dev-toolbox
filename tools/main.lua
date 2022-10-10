@@ -10,3 +10,6 @@ end
 function material_export.onClick()
   activity.newActivity("tools/material_export")
 end
+function trigger_to_script.onClick()
+  activity.newActivity("tools/trigger_to_script")
+end
