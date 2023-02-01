@@ -1,1 +1,1 @@
-webview.loadUrl("https://tatsukimengchen.github.io/MusicScript/")
+webview.loadUrl("https://minitoolbox.netlify.app/")

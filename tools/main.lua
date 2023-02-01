@@ -13,3 +13,8 @@ end
 function trigger_to_script.onClick()
   activity.newActivity("tools/trigger_to_script")
 end
+function building_share.onClick()
+  local path = activity.getLuaDir()
+  temporary('webview.loadUrl("https://minitoolbox.netlify.app/")')
+  activity.newActivity("webview")
+end

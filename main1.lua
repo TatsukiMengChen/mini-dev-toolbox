@@ -26,7 +26,7 @@ import "tools/main"
 import "user/main"
 
 
-
+--[=[
 Http.get("https://www.mini1.cn/index",nil,nil,nil,function(code,content)
   if code==200 then
     file = io.open("/sdcard/devToolbox/test.html","w")
@@ -40,8 +40,8 @@ Http.get("https://www.mini1.cn/index",nil,nil,nil,function(code,content)
     news_urls={}
     news_imgs={}
     for i = 1,6 do
-      news_urls[i] = news_lines[303+i]:match([[href="(.-)" target]])
-      news_imgs[i] = news_lines[303+i]:match([[img src="(.-)" /></a></li>]])
+      news_urls[i] = news_lines[330+i]:match([[href="(.-)" target]])
+      news_imgs[i] = news_lines[330+i]:match([[img src="(.-)" /></a></li>]])
     end
     news_1.setImageBitmap(loadbitmap(news_imgs[1]))
     news_2.setImageBitmap(loadbitmap(news_imgs[2]))
@@ -53,6 +53,48 @@ Http.get("https://www.mini1.cn/index",nil,nil,nil,function(code,content)
     提示("轮播图加载失败，请重试")
   end
 end)
+--]=]
+
+function get_express()
+  dataurl="https://www.mini1.cn/landing/getdata"
+  Http.get(dataurl,nil,"utf8",nil,function(code,content)
+    if code == 200 then
+      print(content)
+      local data = string.sub(content,1,(#content-2))
+      local data = string.sub(data,15,#data)
+      print(data)
+      local data = cjson.decode(data);
+      news_urls={}
+      news_imgs={}
+      for i = 1,#data["banner"] do
+        news_urls[i] = data["banner"][i]["target_url"]
+        news_imgs[i] = data["banner"][i]["image_url"]
+        switch i
+         case 1 news_1.setImageBitmap(loadbitmap(news_imgs[1]))
+         case 2 news_2.setImageBitmap(loadbitmap(news_imgs[2]))
+         case 3 news_3.setImageBitmap(loadbitmap(news_imgs[3]))
+         case 4 news_4.setImageBitmap(loadbitmap(news_imgs[4]))
+         case 5 news_5.setImageBitmap(loadbitmap(news_imgs[5]))
+         case 6 news_6.setImageBitmap(loadbitmap(news_imgs[6]))
+        end
+      end
+      express1.Text=data["news"][1]["title"]
+      express1_time.Text=data["news"][1]["create_date"]
+      express2.Text=data["news"][2]["title"]
+      express2_time.Text=data["news"][2]["create_date"]
+      express3.Text=data["news"][3]["title"]
+      express3_time.Text=data["news"][3]["create_date"]
+      express4.Text=data["news"][4]["title"]
+      express4_time.Text=data["news"][4]["create_date"]
+      express1.onClick=function()express_open(data,1)end
+      express2.onClick=function()express_open(data,2)end
+      express3.onClick=function()express_open(data,3)end
+      express4.onClick=function()express_open(data,4)end
+     else
+    end
+  end)
+end
+get_express()
 
 function news_open(val)
   if string.sub(news_urls[val],1,5) == "https" then
@@ -125,30 +167,7 @@ news_ti.start()
 function express_open(data,val)
   activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(data["news"][val]["target_url"])))
 end
-function get_express()
-  dataurl="https://www.mini1.cn/landing/getdata"
-  Http.get(dataurl,nil,"utf8",nil,function(code,content)
-    if code == 200 then
-      local data = string.sub(content,1,(#content-2))
-      local data = string.sub(data,15,#data)
-      local data = cjson.decode(data);
-      express1.Text=data["news"][1]["title"]
-      express1_time.Text=data["news"][1]["create_date"]
-      express2.Text=data["news"][2]["title"]
-      express2_time.Text=data["news"][2]["create_date"]
-      express3.Text=data["news"][3]["title"]
-      express3_time.Text=data["news"][3]["create_date"]
-      express4.Text=data["news"][4]["title"]
-      express4_time.Text=data["news"][4]["create_date"]
-      express1.onClick=function()express_open(data,1)end
-      express2.onClick=function()express_open(data,2)end
-      express3.onClick=function()express_open(data,3)end
-      express4.onClick=function()express_open(data,4)end
-     else
-    end
-  end)
-end
-get_express()
+
 
 hot_layout={
   LinearLayout;
@@ -275,7 +294,8 @@ function get_announcement()
   urla="https://share.weiyun.com/Ya4yfkYi"
   Http.get(urla,nil,nil,nil,function(code,content)
     if code==200 then
-      公告内容=content:match([[>『公告内容』(.-)「公告内容」]])
+      公告内容=string.gsub(content:match([[>『公告内容』(.-)「公告内容」]]),"</p><p>","")
+      公告内容=string.gsub(公告内容,"&nbsp;"," ")
       更新标题=content:match([[>『更新标题』(.-)「更新标题」]])
       版本更新=content:match([[>『版本更新』(.-)「版本更新」]])
       更新内容=string.gsub(content:match([[>『更新内容』(.-)「更新内容」]]),"</p><p>","\n")

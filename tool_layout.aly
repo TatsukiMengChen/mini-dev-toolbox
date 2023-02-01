@@ -206,6 +206,44 @@
             };
           };
         };
+        {
+          CardView;
+          background="#FFFFFF";
+          CardElevation="5dp";
+          layout_marginLeft="0dp";
+          layout_width="150dp";
+          layout_height="180dp";
+          radius="20dp";
+          layout_margin="20dp";
+          layout_marginTop="0dp";
+          {
+            LinearLayout;
+            layout_width="160dp";
+            layout_gravity="center";
+            orientation="vertical";
+            style="?android:attr/buttonBarButtonStyle";
+            id="building_share";
+            layout_height="200dp";
+            gravity="center";
+            {
+              ImageView;
+              src="res/icon/Illustration/buildind.png";
+              layout_height="60dp";
+              layout_width="60dp";
+            };
+            {
+              TextView;
+              textSize="18sp";
+              text="建筑共享平台";
+              textColor="#2196F3";
+            };
+            {
+              TextView;
+              text="一键复制/生成建筑";
+              textColor="#90CAF9";
+            };
+          };
+        };
       };
     };
   };

@@ -14,6 +14,14 @@ if settings.software_mode == 1 then
   path = "/data/data/"..settings.miniworld_package_name.."/files/miniplay/data/"
 end
 
+import 'data'
+
+if not data.check()--检查data权限
+  data.request(data.save)--请求data权限，回调保存data权限
+  print("下次执行生效")
+  return
+end
+
 function choose.onClick()
   activity.newActivity("mods/map_chooser")
 end

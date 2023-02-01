@@ -4,9 +4,9 @@ import "theme"
 import "tools/id_search_layout"
 activity.setContentView(loadlayout("tools/id_search_layout"))
 
-nums = 8664
+nums = 9756
 path = activity.getLuaDir()
-id1_path = path.."/res/itemid.txt"
+id1_path = path.."/res/item.txt"
 
 function start()
   id3 = {}
@@ -43,39 +43,69 @@ edit.addTextChangedListener{
   end
 }
 list1.onItemLongClick=function(p,v,i,s)
-  item = v.Text
-  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(item)
-  提示("已复制 "..item.." 到剪贴板")
+  id = v.Text
+  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(id)
+  提示("已复制 "..id.." 到剪贴板")
   return true
 end
 list2.onItemLongClick=function(p,v,i,s)
-  item = v.Text
-  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(item)
-  提示("已复制 "..item.." 到剪贴板")
+  id = v.Text
+  activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(id)
+  提示("已复制 "..id.." 到剪贴板")
   return true
 end
 
-function itemid.onClick()
-  nums = 8664
-  id1_path = path.."/res/itemid.txt"
+function item.onClick()
+  nums = 9756
+  id1_path = path.."/res/item.txt"
   start()
   id_search()
 end
-function actorid.onClick()
-  nums = 352
-  id1_path = path.."/res/actorid.txt"
+function actor.onClick()
+  nums = 691
+  id1_path = path.."/res/actor.txt"
   start()
   id_search()
 end
-function modelid.onClick()
-  nums = 333
-  id1_path = path.."/res/modelid.txt"
+function actor_model.onClick()
+  nums = 329
+  id1_path = path.."/res/actor_model.txt"
   start()
   id_search()
 end
-function global_effectid.onClick()
+function skin.onClick()
+  nums = 307
+  id1_path = path.."/res/skin.txt"
+  start()
+  id_search()
+end
+function skin_icon.onClick()
+  nums = 307
+  id1_path = path.."/res/skin_icon.txt"
+  start()
+  id_search()
+end
+function skin_model.onClick()
+  nums = 291
+  id1_path = path.."/res/skin_model.txt"
+  start()
+  id_search()
+end
+function custom_skin.onClick()
+  nums = 1820
+  id1_path = path.."/res/custom_skin.txt"
+  start()
+  id_search()
+end
+function buff.onClick()
+  nums = 387
+  id1_path = path.."/res/buff.txt"
+  start()
+  id_search()
+end
+function global_effect.onClick()
   nums = 2432
-  id1_path = path.."/res/global_effectid.txt"
+  id1_path = path.."/res/global_effect.txt"
   start()
   id_search()
 end

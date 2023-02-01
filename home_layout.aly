@@ -243,6 +243,34 @@
         };
       };
       {
+        CardView;
+        radius="15dp";
+        CardElevation="0dp";
+        layout_marginBottom="20dp";
+        layout_width="fill";
+        background="#f5f5f5";background="#f5f5f5";
+        {
+          LinearLayout;
+          orientation="vertical";
+          {
+            TextView;
+            text="公告";
+            layout_marginBottom="10dp";
+            textColor="#2196F3";
+            layout_margin="15dp";
+            textSize="16sp";
+          };
+          {
+            TextView;
+            id="announcement";
+            layout_margin="15dp";
+            layout_marginTop="0dp";
+            textColor="#000000";
+            textSize="16sp";
+          };
+        };
+      };
+      {
         TextView;
         text="迷你热榜";
         textColor="#2196F3";
@@ -278,33 +306,6 @@
           {
             TextView;
             id="hitokoto_words";
-            layout_margin="15dp";
-            layout_marginTop="0dp";
-            textColor="#000000";
-            textSize="16sp";
-          };
-        };
-      };
-      {
-        CardView;
-        radius="15dp";
-        CardElevation="0dp";
-        layout_width="fill";
-        background="#f5f5f5";background="#f5f5f5";
-        {
-          LinearLayout;
-          orientation="vertical";
-          {
-            TextView;
-            text="公告";
-            layout_marginBottom="10dp";
-            textColor="#2196F3";
-            layout_margin="15dp";
-            textSize="16sp";
-          };
-          {
-            TextView;
-            id="announcement";
             layout_margin="15dp";
             layout_marginTop="0dp";
             textColor="#000000";

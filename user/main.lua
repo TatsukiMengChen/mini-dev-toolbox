@@ -102,6 +102,9 @@ end
 function software_about.onClick()
   activity.newActivity("user/about")
 end
+function software_donate.onClick()
+  activity.newActivity("user/donate")
+end
 function software_setting.onClick()
   if settings["miniworld_package_name"] ~= nil then
     activity.newActivity("user/setting")

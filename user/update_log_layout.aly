@@ -1,13 +1,13 @@
 {
   ScrollView;
-  layout_width="fill";
   background="#FFFFFF";
   layout_height="fill";
+  layout_width="fill";
   {
     LinearLayout;
-    layout_height="match_parent";
     layout_width="match_parent";
     orientation="vertical";
+    layout_height="match_parent";
     layout_margin="20dp";
     {
       TextView;
@@ -18,20 +18,41 @@
     {
       TextView;
       textSize="24sp";
+      text="v2.4.0 (2023.2.1)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="18sp";
+      text=[==[1. 新增工具-触发器转脚本（暂不支持安卓10及以上版本机型）
+2. 新增工具-建筑共享平台（使用教程详见群文件）
+3. ID搜索工具支持搜索更多类型的ID，更新至迷你世界1.23.0版本
+4. 新增我的-捐赠界面
+5. 可在帮助文档内打开帮助文档3.0测试版
+6. 调整主页布局
+7. 修复启动图无法正常加载的bug
+8. 修复轮播图无法正常加载的bug
+9. 修复一些兼容性bug]==];
+      textColor="#000000";
+      textIsSelectable=true;
+    };
+    {
+      TextView;
+      textSize="24sp";
       text="v2.3.0 (2022.10.3)";
       textColor="#2196F3";
     };
     {
       TextView;
-      textIsSelectable=true;
+      textSize="18sp";
       text=[==[1. 新增软件使用引导，对新人更加友好
 2. 新增编辑器-音乐编辑器
 3. 工具-ID搜索工具支持搜索更多类型的ID
 4. 新增我的-关于与帮助-隐私政策
 5. 优化工具-ID搜索工具的搜索逻辑
 6. 修复未获取储存权限导致报错的问题]==];
-      textSize="18sp";
       textColor="#000000";
+      textIsSelectable=true;
     };
     {
       TextView;
@@ -41,7 +62,7 @@
     };
     {
       TextView;
-      textIsSelectable=true;
+      textSize="18sp";
       text=[==[1. 兼容安卓12
 2. 新增主页 - 迷你热榜，快速获取开发灵感
 3. 新增编辑器 - 脚本工厂 - 玩家飞行
@@ -49,8 +70,8 @@
 5. 调整编辑器 - Markdown编辑器，使用更高级的编辑器
 6. 修复主页 - 快报获取失败的问题
 7. 迷你开发者工具箱帮助文档更新内容请在文档内查看]==];
-      textSize="18sp";
       textColor="#000000";
+      textIsSelectable=true;
     };
     {
       TextView;
@@ -60,7 +81,7 @@
     };
     {
       TextView;
-      textIsSelectable=true;
+      textSize="18sp";
       text=[==[1. 新增启动广告图
 2. 新增编辑器 - 脚本工厂 - 添加物品，提供可视化脚本生成工具，简单易用
 3. 新增工具 - 游戏素材提取工具，一键提取游戏装扮图片
@@ -68,8 +89,8 @@
 5. 修复安装包可能无法解析、报毒的问题
 6. 使用新的签名
 7. 迷你开发者工具箱帮助文档更新大量文章]==];
-      textSize="18sp";
       textColor="#000000";
+      textIsSelectable=true;
     };
     {
       TextView;
@@ -79,12 +100,12 @@
     };
     {
       TextView;
-      textIsSelectable=true;
+      textSize="18sp";
       text=[==[1. 教程长按可切换为迷你开发者工具箱帮助文档
 2. 关于界面内的帮助与反馈改为迷你开发者工具箱帮助文档
 ● 关于迷你开发者工具箱帮助文档的更多内容详见：https://tatsukimengchen.github.io/devToolbox/]==];
-      textSize="18sp";
       textColor="#000000";
+      textIsSelectable=true;
     };
     {
       TextView;

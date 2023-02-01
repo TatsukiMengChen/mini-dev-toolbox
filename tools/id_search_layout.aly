@@ -1,129 +1,299 @@
 {
   LinearLayout;
-  background="#FFFFFF";
   layout_height="fill";
-  orientation="vertical";
   layout_width="fill";
+  background="#FFFFFF";
+  orientation="vertical";
   {
     CardView;
-    radius="20dp";
+    layout_height="40dp";
+    layout_marginBottom="10dp";
     layout_margin="20dp";
     elevation="5dp";
-    background="#FFFFFF";
-    layout_height="40dp";
     layout_width="fill";
-    layout_marginBottom="10dp";
+    background="#FFFFFF";
+    radius="20dp";
     {
       EditText;
-      hint="在此输入需要搜索的ID或名称";
-      layout_marginLeft="10dp";
-      layout_marginRight="10dp";
-      background="#FFFFFF";
-      layout_width="fill";
       layout_height="fill";
-      id="edit";
+      layout_marginRight="10dp";
+      hint="在此输入需要搜索的ID或名称";
       gravity="left";
+      id="edit";
+      layout_width="fill";
+      background="#FFFFFF";
+      layout_marginLeft="10dp";
     };
     {
       Button;
-      layout_gravity="end";
+      layout_height="30dp";
+      layout_margin="5dp";
       layout_marginRight="15dp";
       id="search";
-      layout_margin="5dp";
-      layout_height="30dp";
       layout_width="30dp";
       background="res/icon/search.png";
+      layout_gravity="end";
     };
   };
   {
     CardView;
-    layout_margin="20dp";
-    radius="20dp";
-    layout_marginTop="0dp";
-    background="#FFFFFF";
-    layout_width="fill";
     layout_height="40dp";
-    elevation="5dp";
+    layout_margin="20dp";
     layout_marginBottom="0dp";
+    layout_marginTop="0dp";
+    elevation="5dp";
+    layout_width="fill";
+    background="#FFFFFF";
+    radius="20dp";
     {
-      LinearLayout;
-      gravity="center";
-      layout_height="match_parent";
-      orientation="horizontal";
-      layout_width="match_parent";
+      HorizontalScrollView;
+      layout_marginRight="10dp";
+      layout_gravity="center";
+      layout_marginLeft="10dp";
+      HorizontalScrollBarEnabled=false;
       {
         LinearLayout;
-          id="itemid";
+        gravity="center";
+        layout_width="match_parent";
+        layout_height="match_parent";
+        orientation="horizontal";
         {
-          TextView;
-          textSize="16sp";
-          layout_margin="10dp";
-          textColor="#2196f3";
-          text="物品";
+          CardView;
+          elevation="0dp";
+          layout_width="50dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="道具";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="item";
+            layout_gravity="center";
+            layout_width="70dp";
+          };
         };
-      };
-      {
-        LinearLayout;
-          id="actorid";
         {
-          TextView;
-          textSize="16sp";
-          layout_margin="10dp";
-          textColor="#2196f3";
-          text="生物";
+          CardView;
+          elevation="0dp";
+          layout_width="50dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="生物";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="actor";
+            layout_gravity="center";
+            layout_width="70dp";
+          };
         };
-      };
-      {
-        LinearLayout;
-          id="modelid";
         {
-          TextView;
-          textSize="16sp";
-          layout_margin="10dp";
-          textColor="#2196f3";
-          text="模型";
+          CardView;
+          elevation="0dp";
+          layout_width="70dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="生物模型";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="actor_model";
+            layout_gravity="center";
+            layout_width="90dp";
+          };
         };
-      };
-      {
-        LinearLayout;
-          id="global_effectid";
         {
-          TextView;
-          textSize="16sp";
-          layout_margin="10dp";
-          textColor="#2196f3";
-          text="全局效果";
+          CardView;
+          elevation="0dp";
+          layout_width="50dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="装扮";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="skin";
+            layout_gravity="center";
+            layout_width="70dp";
+          };
+        };
+        {
+          CardView;
+          elevation="0dp";
+          layout_width="70dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="装扮图标";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="skin_icon";
+            layout_gravity="center";
+            layout_width="90dp";
+          };
+        };
+        {
+          CardView;
+          elevation="0dp";
+          layout_width="70dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="装扮模型";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="skin_model";
+            layout_gravity="center";
+            layout_width="90dp";
+          };
+        };
+        {
+          CardView;
+          elevation="0dp";
+          layout_width="70dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="定制装扮";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="custom_skin";
+            layout_gravity="center";
+            layout_width="90dp";
+          };
+        };
+        {
+          CardView;
+          elevation="0dp";
+          layout_width="50dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="状态";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="buff";
+            layout_gravity="center";
+            layout_width="70dp";
+          };
+        };
+        {
+          CardView;
+          elevation="0dp";
+          layout_width="70dp";
+          layout_height="30dp";
+          layout_marginRight="5dp";
+          radius="15dp";
+          {
+            TextView;
+            text="全局效果";
+            layout_gravity="center";
+            textSize="16sp";
+            textColor="#2196f3";
+          };
+          {
+            LinearLayout;
+            layout_height="50dp";
+            style="?android:attr/buttonBarButtonStyle";
+            id="global_effect";
+            layout_gravity="center";
+            layout_width="90dp";
+          };
         };
       };
     };
   };
   {
     CardView;
-    radius="20dp";
-    CardElevation="5dp";
-    background="#FFFFFF";
     layout_height="fill";
     layout_margin="20dp";
+    radius="20dp";
     layout_width="fill";
+    CardElevation="5dp";
+    background="#FFFFFF";
     {
       LinearLayout;
-      layout_width="fill";
       layout_height="fill";
+      layout_width="fill";
       {
         ListView;
-        id="list1";
-        layout_weight="1";
-        layout_height="fill";
         fastScrollEnabled=true;
+        layout_weight="1";
+        id="list1";
         layout_width="fill";
+        layout_height="fill";
       };
       {
         ListView;
-        id="list2";
-        layout_weight="1";
-        layout_height="fill";
         fastScrollEnabled=true;
+        layout_weight="1";
+        id="list2";
         layout_width="fill";
+        layout_height="fill";
       };
     };
   };

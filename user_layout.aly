@@ -5,57 +5,57 @@
   layout_height="fill";
   {
     ScrollView;
-    layout_height="fill";
     layout_width="fill";
     VerticalScrollBarEnabled=false;
+    layout_height="fill";
     {
       LinearLayout;
+      layout_width="fill";
       layout_gravity="center|top";
       orientation="vertical";
-      layout_width="fill";
-      layout_height="fill";
       gravity="center|top";
+      layout_height="fill";
       {
         CardView;
+        layout_width="320dp";
         layout_margin="20dp";
         radius="20dp";
-        layout_width="320dp";
-        layout_height="100dp";
         background="#FFFFFF";
+        layout_height="100dp";
         {
           LinearLayout;
-          style="?android:attr/buttonBarButtonStyle";
-          orientation="vertical";
-          id="channel_setup";
           layout_width="340dp";
-          layout_height="120dp";
+          id="channel_setup";
+          style="?android:attr/buttonBarButtonStyle";
           layout_gravity="center";
+          orientation="vertical";
+          layout_height="120dp";
           {
             LinearLayout;
-            orientation="horizontal";
             layout_width="fill";
-            layout_marginTop="5dp";
             layout_marginLeft="5dp";
+            layout_marginTop="5dp";
+            orientation="horizontal";
             {
               CardView;
+              layout_width="40dp";
               layout_margin="10dp";
               CardElevation="0dp";
-              layout_width="40dp";
-              layout_height="40dp";
               radius="10dp";
+              layout_height="40dp";
               {
                 ImageView;
                 layout_width="40dp";
-                layout_height="40dp";
                 src="res/icon/miniworld.png";
+                layout_height="40dp";
               };
             };
             {
               LinearLayout;
-              orientation="vertical";
               layout_width="fill";
               gravity="center|left";
               layout_gravity="center";
+              orientation="vertical";
               {
                 TextView;
                 textSize="16sp";
@@ -77,72 +77,72 @@
             {
               TextView;
               layout_margin="10dp";
-              textColor="#2196F3";
               text="版本：未知";
               layout_marginTop="0dp";
               id="miniworld_version";
+              textColor="#2196F3";
             };
             {
               TextView;
               layout_margin="10dp";
-              textColor="#00C853";
               text="安卓版本：未知";
               layout_marginTop="0dp";
               id="android_version";
+              textColor="#00C853";
             };
           };
         };
         {
           ImageView;
-          layout_gravity="center|right";
-          layout_height="20dp";
           layout_width="20dp";
-          layout_marginRight="20dp";
+          layout_gravity="center|right";
           src="res/icon/switch.png";
+          layout_marginRight="20dp";
+          layout_height="20dp";
         };
       };
       {
         CardView;
-        layout_margin="20dp";
-        radius="20dp";
-        layout_marginTop="0dp";
         background="#FFFFFF";
+        layout_margin="20dp";
+        layout_marginTop="0dp";
+        radius="20dp";
         layout_width="320dp";
         {
           LinearLayout;
           layout_width="fill";
-          layout_height="fill";
           orientation="vertical";
+          layout_height="fill";
           {
             CardView;
+            layout_width="fill";
+            background="#FFFFFF";
             CardElevation="0dp";
             radius="0dp";
-            layout_width="fill";
             layout_height="60dp";
-            background="#FFFFFF";
             {
               LinearLayout;
-              style="?android:attr/buttonBarButtonStyle";
-              id="miniworld_account";
               layout_width="340dp";
-              layout_height="80dp";
+              id="miniworld_account";
+              style="?android:attr/buttonBarButtonStyle";
               layout_gravity="center";
+              layout_height="80dp";
             };
             {
               LinearLayout;
               layout_height="fill";
               {
                 ImageView;
-                layout_gravity="center|left";
                 layout_marginLeft="35px";
+                layout_gravity="center|left";
+                src="res/icon/mini.png";
                 layout_width="25dp";
                 layout_height="25dp";
-                src="res/icon/mini.png";
               };
               {
                 TextView;
-                layout_gravity="center|left";
                 layout_marginLeft="15dp";
+                layout_gravity="center|left";
                 textSize="16sp";
                 text="迷你号";
                 textColor="#000000";
@@ -150,9 +150,9 @@
             };
             {
               LinearLayout;
+              gravity="center";
               layout_gravity="right";
               layout_height="fill";
-              gravity="center";
               {
                 TextView;
                 id="miniworld_Account";
@@ -161,43 +161,43 @@
               {
                 ImageView;
                 layout_marginLeft="10dp";
-                layout_height="20dp";
+                src="res/icon/switch.png";
                 layout_width="20dp";
                 layout_marginRight="15dp";
-                src="res/icon/switch.png";
+                layout_height="20dp";
               };
             };
           };
           {
             CardView;
+            layout_width="fill";
+            background="#FFFFFF";
             CardElevation="0dp";
             radius="0dp";
-            layout_width="fill";
             layout_height="60dp";
-            background="#FFFFFF";
             {
               LinearLayout;
-              style="?android:attr/buttonBarButtonStyle";
-              id="software_mode";
               layout_width="340dp";
-              layout_height="80dp";
+              id="software_mode";
+              style="?android:attr/buttonBarButtonStyle";
               layout_gravity="center";
+              layout_height="80dp";
             };
             {
               LinearLayout;
               layout_height="fill";
               {
                 ImageView;
-                layout_gravity="center|left";
                 layout_marginLeft="35px";
+                layout_gravity="center|left";
+                src="res/icon/adjust.png";
                 layout_width="25dp";
                 layout_height="25dp";
-                src="res/icon/adjust.png";
               };
               {
                 TextView;
-                layout_gravity="center|left";
                 layout_marginLeft="15dp";
+                layout_gravity="center|left";
                 textSize="16sp";
                 text="软件运行模式";
                 textColor="#000000";
@@ -205,9 +205,9 @@
             };
             {
               LinearLayout;
+              gravity="center";
               layout_gravity="right";
               layout_height="fill";
-              gravity="center";
               {
                 TextView;
                 id="software_Mode";
@@ -216,43 +216,43 @@
               {
                 ImageView;
                 layout_marginLeft="10dp";
-                layout_height="20dp";
+                src="res/icon/switch.png";
                 layout_width="20dp";
                 layout_marginRight="15dp";
-                src="res/icon/switch.png";
+                layout_height="20dp";
               };
             };
           };
           {
             CardView;
+            layout_width="fill";
+            background="#FFFFFF";
             CardElevation="0dp";
             radius="0dp";
-            layout_width="fill";
             layout_height="60dp";
-            background="#FFFFFF";
             {
               LinearLayout;
-              style="?android:attr/buttonBarButtonStyle";
-              id="software_about";
               layout_width="340dp";
-              layout_height="80dp";
+              id="software_about";
+              style="?android:attr/buttonBarButtonStyle";
               layout_gravity="center";
+              layout_height="80dp";
             };
             {
               LinearLayout;
               layout_height="fill";
               {
                 ImageView;
-                layout_gravity="center|left";
                 layout_marginLeft="35px";
+                layout_gravity="center|left";
+                src="res/icon/prompt.png";
                 layout_width="25dp";
                 layout_height="25dp";
-                src="res/icon/prompt.png";
               };
               {
                 TextView;
-                layout_gravity="center|left";
                 layout_marginLeft="15dp";
+                layout_gravity="center|left";
                 textSize="16sp";
                 text="关于与帮助";
                 textColor="#000000";
@@ -261,34 +261,70 @@
           };
           {
             CardView;
+            layout_width="fill";
+            background="#FFFFFF";
             CardElevation="0dp";
             radius="0dp";
-            layout_width="fill";
             layout_height="60dp";
-            background="#FFFFFF";
             {
               LinearLayout;
-              style="?android:attr/buttonBarButtonStyle";
-              id="software_setting";
               layout_width="340dp";
-              layout_height="80dp";
+              id="software_donate";
+              style="?android:attr/buttonBarButtonStyle";
               layout_gravity="center";
+              layout_height="80dp";
             };
             {
               LinearLayout;
               layout_height="fill";
               {
                 ImageView;
-                layout_gravity="center|left";
                 layout_marginLeft="35px";
+                layout_gravity="center|left";
+                src="res/icon/donate.png";
                 layout_width="25dp";
                 layout_height="25dp";
-                src="res/icon/setting.png";
               };
               {
                 TextView;
-                layout_gravity="center|left";
                 layout_marginLeft="15dp";
+                layout_gravity="center|left";
+                textSize="16sp";
+                text="捐赠作者";
+                textColor="#000000";
+              };
+            };
+          };
+          {
+            CardView;
+            layout_width="fill";
+            background="#FFFFFF";
+            CardElevation="0dp";
+            radius="0dp";
+            layout_height="60dp";
+            {
+              LinearLayout;
+              layout_width="340dp";
+              id="software_setting";
+              style="?android:attr/buttonBarButtonStyle";
+              layout_gravity="center";
+              layout_height="80dp";
+            };
+            {
+              LinearLayout;
+              layout_height="fill";
+              {
+                ImageView;
+                layout_marginLeft="35px";
+                layout_gravity="center|left";
+                src="res/icon/setting.png";
+                layout_width="25dp";
+                layout_height="25dp";
+              };
+              {
+                TextView;
+                layout_marginLeft="15dp";
+                layout_gravity="center|left";
                 textSize="16sp";
                 text="设置";
                 textColor="#000000";
@@ -299,4 +335,4 @@
       };
     };
   };
-}
+};

@@ -8,6 +8,7 @@ import "tools/material_export_layout"
 activity.setContentView(loadlayout("tools/material_export_layout"))
 
 url = "https://image.mini1.cn//roleicon/"
+url = "https://map1.mini1.cn/roleicon/"
 layout={
   LinearLayout;
   orientation="vertical";

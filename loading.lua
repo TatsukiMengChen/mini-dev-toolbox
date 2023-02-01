@@ -43,7 +43,7 @@ function loading()
       for line in io.lines(file) do
         table.insert(loading_lines,line)
       end
-      image_url = loading_lines[50]:match([[<img src="(.-)" class="bannerimg" alt="" />]])
+      image_url = loading_lines[49]:match([[<img src="(.-)" class="bannerimg" alt="" />]])
       loading_image.setImageBitmap(loadbitmap(image_url))
       run_ti()
      else

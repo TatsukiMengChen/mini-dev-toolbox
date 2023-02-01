@@ -1,9 +1,9 @@
 --名称
 appname="迷你开发者工具箱"
 --版本号
-appver="2.3.1 - beta"
+appver="2.4.0"
 --版本
-appcode="231"
+appcode="240"
 --SDK
 appsdk="21"
 --包名
@@ -16,7 +16,6 @@ user_permission={
   "GET_PACKAGE_SIZE",
   "INTERNET",
   "READ_EXTERNAL_STORAGE",
-  "REQUEST_INSTALL_PACKAGES",
   "SYSTEM_ALERT_WINDOW",
   "VIBRATE",
   "WRITE_EXTERNAL_STORAGE",
