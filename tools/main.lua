@@ -18,3 +18,6 @@ function building_share.onClick()
   temporary('webview.loadUrl("https://minitoolbox.netlify.app/")')
   activity.newActivity("webview")
 end
+function vox.onClick()
+  activity.newActivity("tools/vox")
+end

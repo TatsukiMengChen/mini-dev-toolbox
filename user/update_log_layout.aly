@@ -1,8 +1,8 @@
 {
   ScrollView;
-  background="#FFFFFF";
-  layout_height="fill";
   layout_width="fill";
+  layout_height="fill";
+  background="#FFFFFF";
   {
     LinearLayout;
     layout_width="match_parent";
@@ -14,6 +14,65 @@
       textSize="28sp";
       text="更新日志";
       textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="24sp";
+      text="v2.4.4 (2023.7.5)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="18sp";
+      text=[==[1. 加入热更新代码
+2. 修复工具-体素插件化无法复制脚本的bug
+3. 工具箱将于2023.8.31停止维护]==];
+      textIsSelectable=true;
+      textColor="#000000";
+    };
+    {
+      TextView;
+      textSize="24sp";
+      text="v2.4.3 (2023.5.27)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="18sp";
+      text=[==[1. 更新ID库至1.26.5版本，支持搜索17种类型的ID
+2. 新增工具-体素插件化]==];
+      textIsSelectable=true;
+      textColor="#000000";
+    };
+    {
+      TextView;
+      textSize="24sp";
+      text="v2.4.2 (2023.2.19)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="18sp";
+      text="1. 修复了一些bug";
+      textIsSelectable=true;
+      textColor="#000000";
+    };
+    {
+      TextView;
+      textSize="24sp";
+      text="v2.4.1 (2023.2.18)";
+      textColor="#2196F3";
+    };
+    {
+      TextView;
+      textSize="18sp";
+      text=[==[1. 新增编辑器-图片转脚本
+2. 文档更新至v3.0，采用全新UI
+3. 调整编辑器布局
+4. 工具-文本渐变工具加入左滑进入DIY提示
+5. 修复捐赠界面异常的bug]==];
+      textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;
@@ -33,8 +92,8 @@
 7. 修复启动图无法正常加载的bug
 8. 修复轮播图无法正常加载的bug
 9. 修复一些兼容性bug]==];
-      textColor="#000000";
       textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;
@@ -51,8 +110,8 @@
 4. 新增我的-关于与帮助-隐私政策
 5. 优化工具-ID搜索工具的搜索逻辑
 6. 修复未获取储存权限导致报错的问题]==];
-      textColor="#000000";
       textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;
@@ -70,8 +129,8 @@
 5. 调整编辑器 - Markdown编辑器，使用更高级的编辑器
 6. 修复主页 - 快报获取失败的问题
 7. 迷你开发者工具箱帮助文档更新内容请在文档内查看]==];
-      textColor="#000000";
       textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;
@@ -89,8 +148,8 @@
 5. 修复安装包可能无法解析、报毒的问题
 6. 使用新的签名
 7. 迷你开发者工具箱帮助文档更新大量文章]==];
-      textColor="#000000";
       textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;
@@ -104,8 +163,8 @@
       text=[==[1. 教程长按可切换为迷你开发者工具箱帮助文档
 2. 关于界面内的帮助与反馈改为迷你开发者工具箱帮助文档
 ● 关于迷你开发者工具箱帮助文档的更多内容详见：https://tatsukimengchen.github.io/devToolbox/]==];
-      textColor="#000000";
       textIsSelectable=true;
+      textColor="#000000";
     };
     {
       TextView;

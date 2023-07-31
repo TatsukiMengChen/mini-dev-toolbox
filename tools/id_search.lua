@@ -4,9 +4,9 @@ import "theme"
 import "tools/id_search_layout"
 activity.setContentView(loadlayout("tools/id_search_layout"))
 
-nums = 9756
+nums = 10355
 path = activity.getLuaDir()
-id1_path = path.."/res/item.txt"
+id1_path = path.."/res/id/Item.txt"
 
 function start()
   id3 = {}
@@ -55,57 +55,121 @@ list2.onItemLongClick=function(p,v,i,s)
   return true
 end
 
-function item.onClick()
-  nums = 9756
-  id1_path = path.."/res/item.txt"
+function Act.onClick()
+  nums = 207
+  id1_path = path.."/res/id/Act.txt"
   start()
   id_search()
 end
-function actor.onClick()
-  nums = 691
-  id1_path = path.."/res/actor.txt"
+
+function Animact.onClick()
+  nums = 37
+  id1_path = path.."/res/id/Animact.txt"
   start()
   id_search()
 end
-function actor_model.onClick()
-  nums = 329
-  id1_path = path.."/res/actor_model.txt"
+
+function APIID.onClick()
+  nums = 56
+  id1_path = path.."/res/id/APIID.txt"
   start()
   id_search()
 end
-function skin.onClick()
-  nums = 307
-  id1_path = path.."/res/skin.txt"
+
+function Block.onClick()
+  nums = 1752
+  id1_path = path.."/res/id/Block.txt"
   start()
   id_search()
 end
-function skin_icon.onClick()
-  nums = 307
-  id1_path = path.."/res/skin_icon.txt"
+
+function Buff.onClick()
+  nums = 389
+  id1_path = path.."/res/id/Buff.txt"
   start()
   id_search()
 end
-function skin_model.onClick()
-  nums = 291
-  id1_path = path.."/res/skin_model.txt"
+
+function Crafting.onClick()
+  nums = 1014
+  id1_path = path.."/res/id/Crafting.txt"
   start()
   id_search()
 end
-function custom_skin.onClick()
+
+function Creature.onClick()
+  nums = 703
+  id1_path = path.."/res/id/Creature.txt"
+  start()
+  id_search()
+end
+
+function CustomSkin.onClick()
   nums = 1820
-  id1_path = path.."/res/custom_skin.txt"
+  id1_path = path.."/res/id/CustomSkin.txt"
   start()
   id_search()
 end
-function buff.onClick()
-  nums = 387
-  id1_path = path.."/res/buff.txt"
+
+function Enchant.onClick()
+  nums = 92
+  id1_path = path.."/res/id/Enchant.txt"
   start()
   id_search()
 end
-function global_effect.onClick()
-  nums = 2432
-  id1_path = path.."/res/global_effect.txt"
+
+function EnchantOld.onClick()
+  nums = 120
+  id1_path = path.."/res/id/EnchantOld.txt"
+  start()
+  id_search()
+end
+
+function Horse.onClick()
+  nums = 227
+  id1_path = path.."/res/id/Horse.txt"
+  start()
+  id_search()
+end
+
+function Item.onClick()
+  nums = 10355
+  id1_path = path.."/res/id/Item.txt"
+  start()
+  id_search()
+end
+
+function Particles.onClick()
+  nums = 633
+  id1_path = path.."/res/id/Particles.txt"
+  start()
+  id_search()
+end
+
+function ParticlesPath.onClick()
+  nums = 839
+  id1_path = path.."/res/id/ParticlesPath.txt"
+  start()
+  id_search()
+end
+
+function Projectile.onClick()
+  nums = 141
+  id1_path = path.."/res/id/Projectile.txt"
+  start()
+  id_search()
+end
+
+function Skin.onClick()
+  nums = 340
+  id1_path = path.."/res/id/Skin.txt"
+  start()
+  id_search()
+end
+
+function Sound.onClick()
+  nums = 993
+  id1_path = path.."/res/id/Sound.txt"
   start()
   id_search()
 end

@@ -5,38 +5,38 @@
   gravity="center";
   {
     ScrollView;
+    layout_width="fill";
     VerticalScrollBarEnabled=false;
     layout_height="fill";
-    layout_width="fill";
     {
       LinearLayout;
+      layout_height="fill";
       orientation="vertical";
       layout_gravity="center|top";
-      layout_height="fill";
       {
         LinearLayout;
         {
           CardView;
           background="#FFFFFF";
-          CardElevation="5dp";
-          layout_height="180dp";
           radius="20dp";
-          layout_margin="20dp";
           layout_width="150dp";
+          layout_margin="20dp";
+          layout_height="180dp";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_width="160dp";
-            layout_gravity="center";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
             id="id_search";
-            layout_height="200dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
               src="res/icon/Illustration/search.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;
@@ -53,27 +53,27 @@
         };
         {
           CardView;
-          layout_marginLeft="0dp";
-          CardElevation="5dp";
           background="#FFFFFF";
-          layout_height="180dp";
           radius="20dp";
-          layout_margin="20dp";
+          layout_height="180dp";
           layout_width="150dp";
+          layout_margin="20dp";
+          CardElevation="5dp";
+          layout_marginLeft="0dp";
           {
             LinearLayout;
-            layout_width="160dp";
-            layout_gravity="center";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
             id="pallette";
-            layout_height="200dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
               src="res/icon/Illustration/pallette.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;
@@ -94,26 +94,26 @@
         {
           CardView;
           background="#FFFFFF";
-          CardElevation="5dp";
-          layout_width="150dp";
           layout_height="180dp";
           radius="20dp";
+          layout_width="150dp";
           layout_margin="20dp";
           layout_marginTop="0dp";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_width="160dp";
-            layout_gravity="center";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
             id="gradient_color";
-            layout_height="200dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
               src="res/icon/Illustration/gradient.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;
@@ -130,28 +130,28 @@
         };
         {
           CardView;
-          background="#FFFFFF";
-          layout_marginLeft="0dp";
-          CardElevation="5dp";
-          layout_marginTop="0dp";
           layout_height="180dp";
+          background="#FFFFFF";
+          CardElevation="5dp";
           radius="20dp";
-          layout_margin="20dp";
           layout_width="150dp";
+          layout_margin="20dp";
+          layout_marginTop="0dp";
+          layout_marginLeft="0dp";
           {
             LinearLayout;
-            layout_width="160dp";
-            layout_gravity="center";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
             id="material_export";
-            layout_height="200dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
               src="res/icon/export.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;
@@ -172,26 +172,26 @@
         {
           CardView;
           background="#FFFFFF";
-          CardElevation="5dp";
-          layout_width="150dp";
           layout_height="180dp";
           radius="20dp";
+          layout_width="150dp";
           layout_margin="20dp";
           layout_marginTop="0dp";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_width="160dp";
-            layout_gravity="center";
-            orientation="vertical";
-            style="?android:attr/buttonBarButtonStyle";
             id="trigger_to_script";
-            layout_height="200dp";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
               src="res/icon/Illustration/convert.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;
@@ -208,28 +208,68 @@
         };
         {
           CardView;
-          background="#FFFFFF";
-          CardElevation="5dp";
           layout_marginLeft="0dp";
-          layout_width="150dp";
+          background="#FFFFFF";
           layout_height="180dp";
           radius="20dp";
+          layout_width="150dp";
           layout_margin="20dp";
           layout_marginTop="0dp";
+          CardElevation="5dp";
           {
             LinearLayout;
-            layout_width="160dp";
+            id="vox";
             layout_gravity="center";
-            orientation="vertical";
             style="?android:attr/buttonBarButtonStyle";
-            id="building_share";
-            layout_height="200dp";
+            layout_width="160dp";
             gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
             {
               ImageView;
+              layout_width="60dp";
+              src="res/icon/Illustration/vox.png";
+              layout_height="60dp";
+            };
+            {
+              TextView;
+              textSize="18sp";
+              text="体素插件化";
+              textColor="#2196F3";
+            };
+            {
+              TextView;
+              text="一键将体素脚本插件化";
+              textColor="#90CAF9";
+            };
+          };
+        };
+      };
+      {
+        LinearLayout;
+        {
+          CardView;
+           background="#FFFFFF";
+          layout_height="180dp";
+          radius="20dp";
+          layout_width="150dp";
+          layout_margin="20dp";
+          layout_marginTop="0dp";
+          CardElevation="5dp";
+          {
+            LinearLayout;
+            id="building_share";
+            layout_gravity="center";
+            style="?android:attr/buttonBarButtonStyle";
+            layout_width="160dp";
+            gravity="center";
+            layout_height="200dp";
+            orientation="vertical";
+            {
+              ImageView;
+              layout_width="60dp";
               src="res/icon/Illustration/buildind.png";
               layout_height="60dp";
-              layout_width="60dp";
             };
             {
               TextView;

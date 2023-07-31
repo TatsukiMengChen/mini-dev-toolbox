@@ -12,7 +12,7 @@ end
 
 function zfb.onClick()
   downloadManager=activity.getSystemService(Context.DOWNLOAD_SERVICE);
-  url=Uri.parse("https://s1.ax1x.com/2023/02/01/pSB2vB6.jpg");
+  url=Uri.parse("https://minitoolbox.netlify.app/images/zfb.jpg");
   request=DownloadManager.Request(url);
   request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE|DownloadManager.Request.NETWORK_WIFI);
   request.setDestinationInExternalPublicDir("/DCIM/Camera/","支付宝捐赠二维码.jpg");
@@ -23,7 +23,7 @@ end
 
 function wx.onClick()
   downloadManager=activity.getSystemService(Context.DOWNLOAD_SERVICE);
-  url=Uri.parse("https://s1.ax1x.com/2023/02/01/pSB2jnx.png");
+  url=Uri.parse("https://minitoolbox.netlify.app/images/wx.jpg");
   request=DownloadManager.Request(url);
   request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE|DownloadManager.Request.NETWORK_WIFI);
   request.setDestinationInExternalPublicDir("/DCIM/Camera/","微信捐赠二维码.png");
@@ -34,7 +34,7 @@ end
 
 function qq.onClick()
   downloadManager=activity.getSystemService(Context.DOWNLOAD_SERVICE);
-  url=Uri.parse("https://s1.ax1x.com/2023/02/01/pSDC75T.png");
+  url=Uri.parse("https://minitoolbox.netlify.app/images/qq.jpg");
   request=DownloadManager.Request(url);
   request.setAllowedNetworkTypes(DownloadManager.Request.NETWORK_MOBILE|DownloadManager.Request.NETWORK_WIFI);
   request.setDestinationInExternalPublicDir("/DCIM/Camera/","QQ捐赠二维码.png");

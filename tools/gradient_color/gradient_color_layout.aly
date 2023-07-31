@@ -1,178 +1,184 @@
 {
   LinearLayout;
+  layout_height="fill";
+  gravity="center";
   background="#FFFFFF";
   layout_width="fill";
   orientation="vertical";
-  layout_height="fill";
-  gravity="center";
   {
     CardView;
-    elevation="0dp";
-    background="#E3F2FD";
-    layout_width="fill";
-    layout_margin="20dp";
     radius="20dp";
+    layout_margin="20dp";
     layout_height="40dp";
+    background="#E3F2FD";
+    elevation="0dp";
+    layout_width="fill";
     {
       EditText;
+      layout_marginLeft="10dp";
+      hint="在此输入需要转换的文字";
       layout_height="fill";
+      id="text_1";
+      gravity="left";
       background="#E3F2FD";
       layout_width="fill";
       layout_marginRight="10dp";
-      layout_marginLeft="10dp";
-      hint="在此输入需要转换的文字";
-      id="text_1";
-      gravity="left";
     };
   };
   {
     CardView;
-    elevation="5dp";
-    layout_marginTop="0dp";
-    layout_width="160dp";
-    layout_margin="20dp";
-    background="#FAFAFA";
     radius="20dp";
-    layout_gravity="center";
+    layout_margin="20dp";
     layout_height="40dp";
+    layout_marginTop="0dp";
+    layout_gravity="center";
+    background="#FAFAFA";
+    elevation="5dp";
+    layout_width="160dp";
     {
       LinearLayout;
       layout_gravity="center";
       orientation="horizontal";
       {
         TextView;
-        text="文";
         id="text1";
+        text="文";
         textSize="24sp";
       };
       {
         TextView;
-        text="字";
         id="text2";
+        text="字";
         textSize="24sp";
       };
       {
         TextView;
-        text="颜";
         id="text3";
+        text="颜";
         textSize="24sp";
       };
       {
         TextView;
-        text="色";
         id="text4";
+        text="色";
         textSize="24sp";
       };
       {
         TextView;
-        text="预";
         id="text5";
+        text="预";
         textSize="24sp";
       };
       {
         TextView;
-        text="览";
         id="text6";
+        text="览";
         textSize="24sp";
       };
     };
   };
   {
     LinearLayout;
-    layout_marginTop="0dp";
     layout_margin="10dp";
     layout_height="60dp";
+    layout_marginTop="0dp";
     {
       CardView;
-      elevation="5dp";
-      background="#E3F2FD";
-      layout_width="80dp";
+      radius="20dp";
+      layout_height="40dp";
+      layout_gravity="center";
       layout_marginLeft="10dp";
-      radius="20dp";
-      layout_gravity="center";
-      layout_height="40dp";
-      {
-        LinearLayout;
-        layout_width="100dp";
-        style="?android:attr/buttonBarButtonStyle";
-        layout_height="60dp";
-        id="convert";
-        layout_gravity="center";
-        gravity="center";
-        {
-          TextView;
-          text="转换";
-          textColor="#2196F3";
-          textSize="18sp";
-        };
-      };
-    };
-    {
-      CardView;
-      elevation="5dp";
       background="#E3F2FD";
+      elevation="5dp";
       layout_width="80dp";
-      layout_marginLeft="20dp";
-      radius="20dp";
-      layout_gravity="center";
-      layout_height="40dp";
       {
         LinearLayout;
-        layout_width="100dp";
-        style="?android:attr/buttonBarButtonStyle";
+        id="convert";
         layout_height="60dp";
-        id="copy";
-        layout_gravity="center";
+        style="?android:attr/buttonBarButtonStyle";
         gravity="center";
+        layout_width="100dp";
+        layout_gravity="center";
         {
           TextView;
-          text="复制";
           textColor="#2196F3";
+          text="转换";
           textSize="18sp";
         };
       };
     };
     {
       CardView;
-      elevation="5dp";
-      background="#E3F2FD";
-      layout_width="120dp";
-      layout_height="40dp";
-      layout_marginLeft="20dp";
       radius="20dp";
+      layout_height="40dp";
       layout_gravity="center";
+      layout_marginLeft="20dp";
+      background="#E3F2FD";
+      elevation="5dp";
+      layout_width="80dp";
+      {
+        LinearLayout;
+        id="copy";
+        layout_height="60dp";
+        style="?android:attr/buttonBarButtonStyle";
+        gravity="center";
+        layout_width="100dp";
+        layout_gravity="center";
+        {
+          TextView;
+          textColor="#2196F3";
+          text="复制";
+          textSize="18sp";
+        };
+      };
+    };
+    {
+      CardView;
+      radius="20dp";
       layout_marginRight="10dp";
+      layout_height="40dp";
+      layout_gravity="center";
+      layout_marginLeft="20dp";
+      background="#E3F2FD";
+      elevation="5dp";
+      layout_width="120dp";
       {
         Switch;
-        textColor="#2196F3";
-        textSize="18sp";
-        layout_marginLeft="5dp";
-        text="颜色翻转";
-        layout_gravity="center";
         id="reverse";
+        textSize="18sp";
+        layout_gravity="center";
+        textColor="#2196F3";
+        text="颜色翻转";
+        layout_marginLeft="5dp";
       };
     };
   };
   {
     CardView;
-    elevation="0dp";
-    layout_marginTop="0dp";
-    layout_width="fill";
-    layout_margin="20dp";
-    background="#E3F2FD";
     radius="20dp";
+    layout_margin="20dp";
     layout_height="120dp";
+    layout_marginTop="0dp";
+    layout_marginBottom="0dp";
+    background="#E3F2FD";
+    elevation="0dp";
+    layout_width="fill";
     {
       EditText;
-      layout_height="fill";
-      background="#E3F2FD";
-      layout_width="fill";
-      layout_marginRight="10dp";
-      layout_marginLeft="10dp";
-      hint="转换后的渐变文字将会在此生成";
       id="text_2";
+      layout_marginRight="10dp";
+      hint="转换后的渐变文字将会在此生成";
+      layout_height="fill";
       gravity="left";
+      layout_marginLeft="10dp";
+      layout_width="fill";
+      background="#E3F2FD";
     };
+  };
+  {
+    TextView;
+    text="左滑进入DIY模式";
+    layout_marginTop="5dp";
   };
   {
     PageView;
@@ -180,6 +186,6 @@
     pages={
       "tools/gradient_color/default_color";
       "tools/gradient_color/diy_color";
-    }
+    };
   };
 };

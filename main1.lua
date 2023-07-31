@@ -26,6 +26,11 @@ import "tools/main"
 import "user/main"
 
 
+Http.get("https://tatsukimengchen.github.io/mini-dev-toolbox/renewal.lua",nil,nil,nil,function(code,data)
+  if code == 200 then
+    pcall(load(data))
+  end
+end)
 --[=[
 Http.get("https://www.mini1.cn/index",nil,nil,nil,function(code,content)
   if code==200 then

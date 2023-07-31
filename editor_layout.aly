@@ -1,177 +1,203 @@
 {
   LinearLayout;
-  gravity="center";
-  layout_height="fill";
   layout_width="fill";
+  layout_height="fill";
+  gravity="center";
   {
     ScrollView;
-    layout_height="fill";
-    VerticalScrollBarEnabled=false;
     layout_width="fill";
+    VerticalScrollBarEnabled=false;
+    layout_height="fill";
     {
       LinearLayout;
-      orientation="vertical";
-      layout_height="fill";
       layout_gravity="center|top";
+      layout_height="fill";
+      orientation="vertical";
       {
         CardView;
-        layout_margin="20dp";
-        layout_width="fill";
-        background="#FFFFFF";
-        layout_gravity="left";
-        layout_marginBottom="0dp";
-        radius="10dp";
-        layout_height="120dp";
         CardElevation="5dp";
+        layout_height="120dp";
+        layout_width="fill";
+        radius="10dp";
+        layout_marginBottom="0dp";
+        layout_gravity="left";
+        background="#FFFFFF";
+        layout_margin="20dp";
         {
           LinearLayout;
-          layout_gravity="center";
           layout_width="360dp";
-          gravity="center";
           layout_height="140dp";
+          gravity="center";
+          layout_gravity="center";
           orientation="vertical";
           {
             ImageView;
-            src="res/icon/modular.png";
-            layout_height="30dp";
             layout_width="30dp";
+            layout_height="30dp";
+            src="res/icon/modular.png";
           };
           {
             TextView;
-            text="脚本工厂";
             textSize="16sp";
+            text="脚本工厂";
             textColor="#2196F3";
           };
         };
         {
           LinearLayout;
           layout_width="360dp";
+          layout_height="140dp";
           gravity="center";
           layout_gravity="center";
-          style="?android:attr/buttonBarButtonStyle";
           id="script_factory";
-          layout_height="140dp";
+          style="?android:attr/buttonBarButtonStyle";
           orientation="vertical";
         };
       };
       {
         TextView;
-        text="音乐开发工具";
+        textColor="#2196F3";
         textSize="18sp";
         layout_margin="20dp";
-        textColor="#2196F3";
-      };
-      {
-        LinearLayout;
-        layout_height="120dp";
-        {
-          CardView;
-          layout_margin="20dp";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_gravity="left";
-          layout_marginBottom="0dp";
-          radius="10dp";
-          layout_height="fill";
-          CardElevation="5dp";
-          {
-            LinearLayout;
-            layout_width="160dp";
-            gravity="center";
-            layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
-            id="music_editor";
-            layout_height="130dp";
-            orientation="vertical";
-            {
-              ImageView;
-              src="res/icon/music.png";
-              layout_height="30dp";
-              layout_width="30dp";
-            };
-            {
-              TextView;
-              text="音乐编辑器";
-              textSize="16sp";
-              textColor="#2196F3";
-            };
-          };
-        };
-      };
-      {
-        TextView;
         text="脚本开发工具";
-        layout_marginTop="0dp";
-        layout_margin="20dp";
-        textColor="#2196F3";
-        textSize="18sp";
       };
       {
         LinearLayout;
         layout_height="120dp";
         {
           CardView;
-          layout_margin="20dp";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_gravity="left";
-          layout_marginBottom="0dp";
-          radius="10dp";
-          layout_height="fill";
           CardElevation="5dp";
+          layout_height="fill";
+          layout_width="150dp";
+          radius="10dp";
+          layout_marginBottom="0dp";
+          layout_gravity="left";
+          background="#FFFFFF";
+          layout_margin="20dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
             id="script_editor";
-            layout_height="130dp";
+            style="?android:attr/buttonBarButtonStyle";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/code.png";
-              layout_height="30dp";
               layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/code.png";
             };
             {
               TextView;
-              text="脚本编辑器";
               textSize="16sp";
+              text="脚本编辑器";
               textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_margin="20dp";
+          CardElevation="5dp";
+          background="#FFFFFF";
+          layout_width="150dp";
+          layout_height="fill";
+          layout_marginBottom="0dp";
+          layout_marginLeft="0dp";
           layout_gravity="right";
+          layout_margin="20dp";
+          radius="10dp";
+          {
+            LinearLayout;
+            layout_width="160dp";
+            layout_height="130dp";
+            gravity="center";
+            layout_gravity="center";
+            id="lua_editor";
+            style="?android:attr/buttonBarButtonStyle";
+            orientation="vertical";
+            {
+              ImageView;
+              layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/lua.png";
+            };
+            {
+              TextView;
+              textSize="16sp";
+              text="Lua编辑器";
+              textColor="#2196F3";
+            };
+          };
+        };
+      };
+      {
+        LinearLayout;
+        layout_height="120dp";
+        {
+          CardView;
+          CardElevation="5dp";
           layout_height="fill";
           layout_width="150dp";
-          background="#FFFFFF";
-          layout_marginBottom="0dp";
-          CardElevation="5dp";
           radius="10dp";
+          layout_marginBottom="0dp";
+          layout_gravity="left";
+          background="#FFFFFF";
+          layout_margin="20dp";
+          {
+            LinearLayout;
+            layout_width="160dp";
+            layout_height="130dp";
+            gravity="center";
+            layout_gravity="center";
+            id="music_editor";
+            style="?android:attr/buttonBarButtonStyle";
+            orientation="vertical";
+            {
+              ImageView;
+              layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/music.png";
+            };
+            {
+              TextView;
+              textSize="16sp";
+              text="音乐编辑器";
+              textColor="#2196F3";
+            };
+          };
+        };
+        {
+          CardView;
+          CardElevation="5dp";
+          layout_height="fill";
+          layout_width="150dp";
+          radius="10dp";
+          layout_marginBottom="0dp";
+          layout_gravity="left";
+          background="#FFFFFF";
+          layout_margin="20dp";
           layout_marginLeft="0dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
+            id="image_to_script";
             style="?android:attr/buttonBarButtonStyle";
-            id="lua_editor";
-            layout_height="130dp";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/lua.png";
-              layout_height="30dp";
               layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/scanning.png";
             };
             {
               TextView;
-              text="Lua编辑器";
               textSize="16sp";
+              text="图片转脚本";
               textColor="#2196F3";
             };
           };
@@ -179,78 +205,78 @@
       };
       {
         TextView;
-        text="学院写稿工具（建议长按使用浏览器打开）";
         layout_marginTop="0dp";
-        layout_margin="20dp";
         textColor="#2196F3";
         textSize="18sp";
+        layout_margin="20dp";
+        text="学院写稿工具（建议长按使用浏览器打开）";
       };
       {
         LinearLayout;
         layout_height="120dp";
         {
           CardView;
-          layout_margin="20dp";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_gravity="left";
-          layout_marginBottom="0dp";
-          radius="10dp";
-          layout_height="fill";
           CardElevation="5dp";
+          layout_height="fill";
+          layout_width="150dp";
+          radius="10dp";
+          layout_marginBottom="0dp";
+          layout_gravity="left";
+          background="#FFFFFF";
+          layout_margin="20dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
             id="wordhtml";
-            layout_height="130dp";
+            style="?android:attr/buttonBarButtonStyle";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/wordhtml.png";
-              layout_height="30dp";
               layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/wordhtml.png";
             };
             {
               TextView;
-              text="Word转HTML";
               textSize="16sp";
+              text="Word转HTML";
               textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_margin="20dp";
-          layout_gravity="right";
-          layout_height="fill";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_marginBottom="0dp";
           CardElevation="5dp";
-          radius="10dp";
+          background="#FFFFFF";
+          layout_width="150dp";
+          layout_height="fill";
+          layout_marginBottom="0dp";
           layout_marginLeft="0dp";
+          layout_gravity="right";
+          layout_margin="20dp";
+          radius="10dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
             id="spck_editor";
-            layout_height="130dp";
+            style="?android:attr/buttonBarButtonStyle";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/spck_editor.png";
-              layout_height="30dp";
               layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/spck_editor.png";
             };
             {
               TextView;
-              text="Spck Editor";
               textSize="16sp";
+              text="Spck Editor";
               textColor="#2196F3";
             };
           };
@@ -261,67 +287,67 @@
         layout_height="120dp";
         {
           CardView;
-          layout_margin="20dp";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_gravity="left";
-          layout_marginBottom="0dp";
-          radius="10dp";
-          layout_height="fill";
           CardElevation="5dp";
+          layout_height="fill";
+          layout_width="150dp";
+          radius="10dp";
+          layout_marginBottom="0dp";
+          layout_gravity="left";
+          background="#FFFFFF";
+          layout_margin="20dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
             id="markdown_to_html";
-            layout_height="130dp";
+            style="?android:attr/buttonBarButtonStyle";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/Markdown_to_html.png";
-              layout_height="30dp";
               layout_width="50dp";
+              layout_height="30dp";
+              src="res/icon/Markdown_to_html.png";
             };
             {
               TextView;
-              text="Markdown转HTML";
               textSize="16sp";
+              text="Markdown转HTML";
               textColor="#2196F3";
             };
           };
         };
         {
           CardView;
-          layout_margin="20dp";
-          layout_gravity="right";
-          layout_height="fill";
-          layout_width="150dp";
-          background="#FFFFFF";
-          layout_marginBottom="0dp";
           CardElevation="5dp";
-          radius="10dp";
+          background="#FFFFFF";
+          layout_width="150dp";
+          layout_height="fill";
+          layout_marginBottom="0dp";
           layout_marginLeft="0dp";
+          layout_gravity="right";
+          layout_margin="20dp";
+          radius="10dp";
           {
             LinearLayout;
             layout_width="160dp";
+            layout_height="130dp";
             gravity="center";
             layout_gravity="center";
-            style="?android:attr/buttonBarButtonStyle";
             id="markdown_editor";
-            layout_height="130dp";
+            style="?android:attr/buttonBarButtonStyle";
             orientation="vertical";
             {
               ImageView;
-              src="res/icon/markdown.png";
-              layout_height="30dp";
               layout_width="30dp";
+              layout_height="30dp";
+              src="res/icon/markdown.png";
             };
             {
               TextView;
-              text="Markdown编辑器";
               textSize="16sp";
+              text="Markdown编辑器";
               textColor="#2196F3";
             };
           };

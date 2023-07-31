@@ -57,7 +57,7 @@
         radius="15dp";
         {
           ImageView;
-          src="https://s1.ax1x.com/2023/02/01/pSB2vB6.jpg";
+          src="https://minitoolbox.netlify.app/images/zfb.jpg";
           layout_width="match_parent";
           scaleType="center";
         };
@@ -72,7 +72,7 @@
         radius="15dp";
         {
           ImageView;
-          src="https://s1.ax1x.com/2023/02/01/pSB2jnx.png";
+          src="https://minitoolbox.netlify.app/images/wx.jpg";
           layout_width="match_parent";
           scaleType="center";
         };
@@ -88,7 +88,7 @@
         layout_height="130%w";
         {
           ImageView;
-          src="https://s1.ax1x.com/2023/02/01/pSDC75T.png";
+          src="https://minitoolbox.netlify.app/images/qq.jpg";
           layout_width="fill";
           layout_height="fill";
           scaleType="fitXY";

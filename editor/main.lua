@@ -9,6 +9,11 @@ function music_editor.onClick()
   activity.newActivity("webview")
   提示"温馨提示：横屏使用体验更佳"
 end
+function image_to_script.onClick()
+  url="https://ycbrmsn.com/mini/script/detail/200/10"
+  activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+  提示"此功能由莫小仙提供"
+end
 function script_editor.onClick()
   local path = activity.getLuaDir()
   temporary('webview.loadUrl("'..path..'/editor/script_editor/index.html")')
