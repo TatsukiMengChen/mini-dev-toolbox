@@ -1,1 +1,0 @@
-webview.loadUrl("https://minitoolbox.netlify.app/")
