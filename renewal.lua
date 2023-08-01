@@ -27,7 +27,7 @@ local function run(v)
 内群群号：323857692]]
 
 
-    --[=[
+    
 弹窗={
 
   FrameLayout,--帧布局
@@ -182,7 +182,7 @@ dkl.dismiss()
     };
   };
 };
-]=]
+
 
     dkl=AlertDialog.Builder(this)
     dkl.setView(loadlayout(弹窗))
