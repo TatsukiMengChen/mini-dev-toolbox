@@ -229,7 +229,7 @@ dkl.dismiss()
                 layout_width='fill';--宽度
                 layout_height='fill';--高度
                 textColor='#c1000000';--文字颜色
-                text='公告';--显示文字
+                text='激活码';--显示文字
                 textSize='18dp';--文字大小
                 Typeface=Typeface.DEFAULT_BOLD--加粗字体
               };
@@ -265,6 +265,7 @@ dkl.dismiss()
                     id="pwd";
                     layout_width="fill";
                     hint="请输入激活码";
+                    gravity="center";
                   };
                 };
               };
@@ -311,7 +312,6 @@ dkl.dismiss()
 
                     url="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=".."882487612".."&card_type=group&source=qrcode"
                     activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
-                    dkl.dismiss()
                   end;
                 };
               };
