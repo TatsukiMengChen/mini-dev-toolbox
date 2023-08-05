@@ -12,19 +12,9 @@ local function run(v)
 
   if v == 1 then
 
-    notice = [[由于一些特殊原因，工具箱将于2023年8月31号停止维护
-新的APP《迷梦工坊》正在努力开发中，预计将于8月初发布
-申请内测请加入迷梦工坊Q群：882487612
-
-内群申请要求（满足任意一点即可）：
-1. 迷你人气值10W+
-2. 熟练并掌握至少一门编程语言
-3. 工具箱忠实粉丝（于2022年7月1日之前进群）
-4. 对工具箱发展有过帮助
-5. 联动工作室
-6. 星光工作室骨干成员
-7. 更多进群理由请私信梦辰
-内群群号：323857692]]
+    notice = [[迷梦工坊已经上线正式版！
+官网：https://mimeng.fun
+Q群：882487612]]
 
 
     
@@ -131,12 +121,12 @@ local function run(v)
               layout_width='fill';--宽度
               layout_height='fill';--高度
               textColor='#2196F3';--文字颜色
-              text="前往加群",--文本内容
+              text="前往官网",--文本内容
               textSize='14dp';--文字大小
               id="qx";
               onClick=function()--单击事件
                 
-                url="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=".."882487612".."&card_type=group&source=qrcode"
+                url="https://mimeng.fun"
   activity.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
                 dkl.dismiss()
               end;
