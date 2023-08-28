@@ -363,12 +363,14 @@ dkl.dismiss()
 
   end
 end
-
+--[[
 local ss = settings_decode()
 if ss["activation_code"] == ac then
   run(1)
  else
   run(2)
 end
+]]
 
+run(1)
 
